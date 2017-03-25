@@ -30,6 +30,27 @@ ccs13 = CategoryClothesize.create!(name:'UK 26')
 ccs14 = CategoryClothesize.create!(name:'UK 28')
 ccs15 = CategoryClothesize.create!(name:'UK 30')
 
+CategoryClothetype.delete_all
+cct01 = CategoryClothetype.create!(name:'Coats & Jackets')
+cct02 = CategoryClothetype.create!(name:'Dresses')
+cct03 = CategoryClothetype.create!(name:'Hoodies & Sweatshirts')
+cct04 = CategoryClothetype.create!(name:'Jeans & Denims')
+cct05 = CategoryClothetype.create!(name:'Jumpers & Cardigans')
+cct06 = CategoryClothetype.create!(name:'Jumpsuits & Playsuits')
+cct07 = CategoryClothetype.create!(name:'Lingerie & Nightwear')
+cct08 = CategoryClothetype.create!(name:'Loungewear')
+cct09 = CategoryClothetype.create!(name:'Maternity')
+cct10 = CategoryClothetype.create!(name:'Shirts & Blouses')
+cct11 = CategoryClothetype.create!(name:'Shorts')
+cct12 = CategoryClothetype.create!(name:'Skirts')
+cct13 = CategoryClothetype.create!(name:'Socks & Tights')
+cct14 = CategoryClothetype.create!(name:'Sportswear')
+cct15 = CategoryClothetype.create!(name:'Swim & Beachwear')
+cct16 = CategoryClothetype.create!(name:'Tops')
+cct17 = CategoryClothetype.create!(name:'Trousers & Leggings')
+cct18 = CategoryClothetype.create!(name:'T-shirts & Vests')
+cct19 = CategoryClothetype.create!(name:'Workwear Suits')
+
 CategoryColour.delete_all
 cc01 = CategoryColour.create!(name:'Beige')
 cc02 = CategoryColour.create!(name:'Blue')
@@ -49,6 +70,8 @@ cc15 = CategoryColour.create!(name:'Silver')
 cc16 = CategoryColour.create!(name:'Tan')
 cc17 = CategoryColour.create!(name:'White')
 cc18 = CategoryColour.create!(name:'Yellow')
+cc19 = CategoryColour.create!(name:'Multi')
+cc19 = CategoryColour.create!(name:'Stone')
 
 CategoryGeneralsize.delete_all
 cgs01 = CategoryGeneralsize.create!(name:'XS')
@@ -66,6 +89,11 @@ css05 = CategoryShoesize.create!(name:'UK 6')
 css06 = CategoryShoesize.create!(name:'UK 7')
 css07 = CategoryShoesize.create!(name:'UK 8')
 
-
+CategoryType.delete_all
+ct01 = CategoryType.create!(name:'Clothes')
+ct02 = CategoryType.create!(name:'Accessories')
+ct03 = CategoryType.create!(name:'Shoes')
+ct04 = CategoryType.create!(name:'Bags')
+ct05 = CategoryType.create!(name:'Gifts')
 
 
