@@ -6,6 +6,13 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+CategoryBrand.delete_all
+cb01 = CategoryBrand.create!(name:'Disel')
+cb02 = CategoryBrand.create!(name:'Ralph Laurent')
+cb03 = CategoryBrand.create!(name:'Espirit')
+cb04 = CategoryBrand.create!(name:'Ted Baker')
+cb05 = CategoryBrand.create!(name:'River Island')
+
 CategoryColour.delete_all
 cc01 = CategoryColour.create!(name:'red')
 cc02 = CategoryColour.create!(name:'yellow')
@@ -15,8 +22,3 @@ cc05 = CategoryColour.create!(name:'black')
 cc06 = CategoryColour.create!(name:'white')
 cc07 = CategoryColour.create!(name:'orange')
 
-CategoryBlog.delete_all
-cb01 = CategoryBlog.create!(name:'News')
-cb02 = CategoryBlog.create!(name:'Venues')
-cb03 = CategoryBlog.create!(name:'Networking Tips')
-cb04 = CategoryBlog.create!(name:'Dating Tips')
