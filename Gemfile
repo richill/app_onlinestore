@@ -12,6 +12,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'simple_form'
 gem 'font-awesome-rails'
 gem 'foundation-rails'
+gem 'devise'
 
 group :development, :test do
   gem 'byebug', platform: :mri
