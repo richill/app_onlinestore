@@ -9,6 +9,17 @@
     <%= f.input :reference %>
     <%= f.input :stock %>
     <%= f.input :sale %>
+
+    <%= f.association :category_accessorytype, collection: CategoryAccessorytype.all, prompt: "select a category", label: "Accessory Type" %>
+    <%= f.association :category_bagtype, collection: CategoryBagtype.all, prompt: "select a category", label: "Bag Type" %>
+    <%= f.association :category_brand, collection: CategoryBrand.all, prompt: "select a category", label: "Brand Type" %>
+    <%= f.association :category_clothesize, collection: CategoryClothesize.all, prompt: "select a category", label: "Clothe Size" %>
+    <%= f.association :category_clothetype, collection: CategoryClothetype.all, prompt: "select a category", label: "Clothe Type" %>
+    <%= f.association :category_colour, collection: CategoryColour.all, prompt: "select a category", label: "Colour" %>
+    <%= f.association :category_generalsize, collection: CategoryGeneralsize.all, prompt: "select a category", label: "Size" %>
+    <%= f.association :category_shoesize, collection: CategoryShoesize.all, prompt: "select a category", label: "Shoe Size" %>
+    <%= f.association :category_shoetype, collection: CategoryShoetype.all, prompt: "select a category", label: "Shoe Type" %>
+    <%= f.association :category_type, collection: CategoryType.all, prompt: "select a category", label: "Type" %>
   </div>
 
   <div class="form-actions">
