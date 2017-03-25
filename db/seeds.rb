@@ -13,6 +13,23 @@ cb03 = CategoryBrand.create!(name:'Espirit')
 cb04 = CategoryBrand.create!(name:'Ted Baker')
 cb05 = CategoryBrand.create!(name:'River Island')
 
+CategoryClothesize.delete_all
+ccs01 = CategoryClothesize.create!(name:'UK 2')
+ccs02 = CategoryClothesize.create!(name:'UK 4')
+ccs03 = CategoryClothesize.create!(name:'UK 6')
+ccs04 = CategoryClothesize.create!(name:'UK 8')
+ccs05 = CategoryClothesize.create!(name:'UK 10')
+ccs06 = CategoryClothesize.create!(name:'UK 12')
+ccs07 = CategoryClothesize.create!(name:'UK 14')
+ccs08 = CategoryClothesize.create!(name:'UK 16')
+ccs09 = CategoryClothesize.create!(name:'UK 18')
+ccs10 = CategoryClothesize.create!(name:'UK 20')
+ccs11 = CategoryClothesize.create!(name:'UK 22')
+ccs12 = CategoryClothesize.create!(name:'UK 24')
+ccs13 = CategoryClothesize.create!(name:'UK 26')
+ccs14 = CategoryClothesize.create!(name:'UK 28')
+ccs15 = CategoryClothesize.create!(name:'UK 30')
+
 CategoryColour.delete_all
 cc01 = CategoryColour.create!(name:'Beige')
 cc02 = CategoryColour.create!(name:'Blue')
@@ -34,13 +51,13 @@ cc17 = CategoryColour.create!(name:'White')
 cc18 = CategoryColour.create!(name:'Yellow')
 
 CategoryShoesize.delete_all
-cs01 = CategoryShoesize.create!(name:'UK 2')
-cs02 = CategoryShoesize.create!(name:'UK 3')
-cs03 = CategoryShoesize.create!(name:'UK 4')
-cs04 = CategoryShoesize.create!(name:'UK 5')
-cs05 = CategoryShoesize.create!(name:'UK 6')
-cs06 = CategoryShoesize.create!(name:'UK 7')
-cs07 = CategoryShoesize.create!(name:'UK 8')
+css01 = CategoryShoesize.create!(name:'UK 2')
+css02 = CategoryShoesize.create!(name:'UK 3')
+css03 = CategoryShoesize.create!(name:'UK 4')
+css04 = CategoryShoesize.create!(name:'UK 5')
+css05 = CategoryShoesize.create!(name:'UK 6')
+css06 = CategoryShoesize.create!(name:'UK 7')
+css07 = CategoryShoesize.create!(name:'UK 8')
 
 
 
