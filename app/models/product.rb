@@ -1,4 +1,6 @@
 class Product < ApplicationRecord
+  belongs_to :category_accessorytype 
+  belongs_to :category_bagtype 
   belongs_to :category_brand 
   belongs_to :category_clothesizes
   belongs_to :category_clothetypes 

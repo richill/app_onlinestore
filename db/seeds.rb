@@ -6,6 +6,40 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+
+CategoryAccessorytype.delete_all
+cat01 = CategoryAccessorytype.create!(name:'Belts')
+cat02 = CategoryAccessorytype.create!(name:'Bow Ties & Collars')
+cat03 = CategoryAccessorytype.create!(name:'Bracelets')
+cat04 = CategoryAccessorytype.create!(name:'Capes & Ponchos')
+cat05 = CategoryAccessorytype.create!(name:'Earrings')
+cat06 = CategoryAccessorytype.create!(name:'Glasses')
+cat07 = CategoryAccessorytype.create!(name:'Gloves')
+cat08 = CategoryAccessorytype.create!(name:'Hair Accessories')
+cat09 = CategoryAccessorytype.create!(name:'Hats')
+cat10 = CategoryAccessorytype.create!(name:'Key Rings')
+cat11 = CategoryAccessorytype.create!(name:'Necklaces')
+cat12 = CategoryAccessorytype.create!(name:'Rings')
+cat13 = CategoryAccessorytype.create!(name:'Scarves & Snoods')
+cat14 = CategoryAccessorytype.create!(name:'Umbrellas')
+
+CategoryBagtype.delete_all
+cbt01 = CategoryBagtype.create!(name:'Across Body Bags')
+cbt02 = CategoryBagtype.create!(name:'Bum Bags')
+cbt03 = CategoryBagtype.create!(name:'Backpacks')
+cbt04 = CategoryBagtype.create!(name:'Clutches')
+cbt05 = CategoryBagtype.create!(name:'Coin Purses')
+cbt06 = CategoryBagtype.create!(name:'Folder Over Purses')
+cbt07 = CategoryBagtype.create!(name:'Gym Bags')
+cbt08 = CategoryBagtype.create!(name:'Holdalls')
+cbt09 = CategoryBagtype.create!(name:'Make up Bags')
+cbt10 = CategoryBagtype.create!(name:'Satchels')
+cbt11 = CategoryBagtype.create!(name:'Shoppers')
+cbt12 = CategoryBagtype.create!(name:'Shoulder Bags')
+cbt13 = CategoryBagtype.create!(name:'Totes')
+cbt14 = CategoryBagtype.create!(name:'Bag Accessories')
+cbt15 = CategoryBagtype.create!(name:'Zip Purses')
+
 CategoryBrand.delete_all
 cb01 = CategoryBrand.create!(name:'Disel')
 cb02 = CategoryBrand.create!(name:'Ralph Laurent')
@@ -106,7 +140,7 @@ CategoryType.delete_all
 ct01 = CategoryType.create!(name:'Clothes')
 ct02 = CategoryType.create!(name:'Accessories')
 ct03 = CategoryType.create!(name:'Shoes')
-ct04 = CategoryType.create!(name:'Bags')
+ct04 = CategoryType.create!(name:'Bags & Purses')
 ct05 = CategoryType.create!(name:'Gifts')
 
 
