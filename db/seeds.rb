@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-CategoryAccessorytype.delete_all
+CategoryAccessorytype.delete_all 
 cat01 = CategoryAccessorytype.create!(name:'Belts')
 cat02 = CategoryAccessorytype.create!(name:'Bow Ties & Collars')
 cat03 = CategoryAccessorytype.create!(name:'Bracelets')

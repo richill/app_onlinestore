@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170325144936) do
+ActiveRecord::Schema.define(version: 20170325150421) do
 
   create_table "category_accessorytypes", force: :cascade do |t|
     t.string   "name"
@@ -80,8 +80,18 @@ ActiveRecord::Schema.define(version: 20170325144936) do
     t.string   "reference"
     t.integer  "stock"
     t.boolean  "sale"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+    t.integer  "category_accessorytype_id"
+    t.integer  "category_bagtype_id"
+    t.integer  "category_brand_id"
+    t.integer  "category_clothesize_id"
+    t.integer  "category_clothetype_id"
+    t.integer  "category_colour_id"
+    t.integer  "category_generalsize_id"
+    t.integer  "category_shoesize_id"
+    t.integer  "category_shoetype_id"
+    t.integer  "category_type_id"
   end
 
   create_table "users", force: :cascade do |t|
