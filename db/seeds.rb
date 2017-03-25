@@ -50,6 +50,13 @@ cc16 = CategoryColour.create!(name:'Tan')
 cc17 = CategoryColour.create!(name:'White')
 cc18 = CategoryColour.create!(name:'Yellow')
 
+CategoryGeneralsize.delete_all
+cgs01 = CategoryGeneralsize.create!(name:'XS')
+cgs02 = CategoryGeneralsize.create!(name:'S')
+cgs03 = CategoryGeneralsize.create!(name:'M')
+cgs04 = CategoryGeneralsize.create!(name:'L')
+cgs05 = CategoryGeneralsize.create!(name:'XL')
+
 CategoryShoesize.delete_all
 css01 = CategoryShoesize.create!(name:'UK 2')
 css02 = CategoryShoesize.create!(name:'UK 3')
