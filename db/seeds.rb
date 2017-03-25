@@ -89,6 +89,19 @@ css05 = CategoryShoesize.create!(name:'UK 6')
 css06 = CategoryShoesize.create!(name:'UK 7')
 css07 = CategoryShoesize.create!(name:'UK 8')
 
+CategoryShoetype.delete_all
+cst01 = CategoryShoetype.create!(name:'Espadrilles')
+cst02 = CategoryShoetype.create!(name:'Flat Boots')
+cst03 = CategoryShoetype.create!(name:'Flat Sandals')
+cst04 = CategoryShoetype.create!(name:'Flat Shoes')
+cst05 = CategoryShoetype.create!(name:'Flat Flops')
+cst06 = CategoryShoetype.create!(name:'Heeled Boots')
+cst07 = CategoryShoetype.create!(name:'Heeled Sandals')
+cst08 = CategoryShoetype.create!(name:'Heeled Shoes')
+cst09 = CategoryShoetype.create!(name:'Shoe Accessories')
+cst10 = CategoryShoetype.create!(name:'Slippers')
+cst11 = CategoryShoetype.create!(name:'Trainers')
+
 CategoryType.delete_all
 ct01 = CategoryType.create!(name:'Clothes')
 ct02 = CategoryType.create!(name:'Accessories')
