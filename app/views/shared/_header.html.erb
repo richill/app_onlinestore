@@ -13,7 +13,12 @@
     <div class="search_section">
       <ul>
         <li class="logo"><%= link_to "first choice", "#" %></li>
-        <!-- <li class="search">search</li> -->
+        <li class="search">
+          <%= search_form_for(@search) do |f| %>
+           <%= f.text_field  :title_cont %>
+           <%= f.submit 'go' %>
+          <% end %>
+        </li>
       </ul>
     </div>
     <div>links</div>
