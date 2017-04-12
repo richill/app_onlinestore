@@ -13,6 +13,7 @@ gem 'simple_form'
 gem 'font-awesome-rails'
 gem 'foundation-rails'
 gem 'devise'
+gem 'ransack'
 
 group :development, :test do
   gem 'byebug', platform: :mri

@@ -3,6 +3,8 @@
     File: _header.html.erb
   =========================================*/
 
+// black: #262626 | light grey: #f6f6f6 | deep grey: #c1c1c1
+
 .header_container {
   font-weight: 400;
   color: #262626;
@@ -10,17 +12,17 @@
   padding: 0px !important;
 }
 
-.header_inner_container {
+.header_container .header_inner_container {
   width: 1200px;
   margin: auto;
   background-color: #fff;
 }
 
-.upper_links_section {
+.header_container .upper_links_section {
   background-color: #fff;
 }
 
-.upper_links_section ul {
+.header_container .upper_links_section ul {
   margin: 0px;
   list-style-type: none;
   display: inline-block;
@@ -28,24 +30,23 @@
   text-transform: uppercase;
 }
 
-.upper_links_section ul li {
+.header_container .upper_links_section ul li {
   float: right !important;
   text-align: right;
 }
 
-.upper_links_section ul li a {
+.header_container .upper_links_section ul li a {
   font-size: 12px;
   font-weight: 400;
   color: #262626;
 }
 
-.divider {
+.header_container .divider {
   margin: 0px 15px;
   color: #c1c1c1;
-  // color: #f6f6f6;
 }
 
-.shopping_cart a {
+.header_container .shopping_cart a {
   background-color: #262626;
   color: #fff !important;
   font-weight: bold !important;
@@ -55,10 +56,70 @@
   margin-left: 15px;
 }
 
-.shopping_cart a:hover {
+.header_container .shopping_cart a:hover {
   background-color: #262626 !important;
 }
 
-.link {
+.header_container .link {
   padding: 8px 0px;
 }
+
+
+// --------------------------
+//   workings
+// --------------------------
+.search_section {
+  background-color: #fff;
+}
+
+.search_section ul {
+  margin: 0px;
+  list-style-type: none;
+  display: inline-block;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.search_section ul li {
+  float: left !important;
+}
+
+.logo {
+  font-size: 45px;
+}
+
+.logo a {
+  color: #262626;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
