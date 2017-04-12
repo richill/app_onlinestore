@@ -47,6 +47,10 @@
   color: #262626;
 }
 
+.header_main_container .header_container .upper_links_section ul li a:hover {
+  text-decoration: underline;
+}
+
 .header_main_container .header_container .divider {
   margin: 0px 15px;
   color: #c1c1c1;
@@ -120,10 +124,9 @@
   font-style: italic;
 }
 
-.header_main_container .header_container .search input {
+.header_main_container .header_container .search input[type="submit"] {
   padding: 6px 10px 8px;
   border: 1px solid #ccc;
-  background: url(../../images/global/bgs/search-box-submit.png) bottom left repeat-y #f0f0f0;
   background: -webkit-linear-gradient(top,#F0F0F0 0,#E1E1E1 100%);
   background: -moz-linear-gradient(top,#F0F0F0 0,#E1E1E1 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#F0F0F0', endColorstr='#E1E1E1');
@@ -138,6 +141,12 @@
   height: 30px;
   width: auto;
   font-size: 12px;
+}
+
+.header_main_container .header_container input[type="submit"]:hover {
+    background: #CADB59;
+    color: #666;
+    cursor: pointer;
 }
 
 .header_main_container .header_container .lower_links_section {
@@ -199,6 +208,10 @@
   font-weight: 400;
   color: #262626;
   padding: 0px 25px;
+}
+
+.header_main_container .header_bottom_container .header_bottom_inner_container li a:hover {
+  text-decoration: underline;
 }
 
 .header_main_container .header_bottom_container .inner_link {
