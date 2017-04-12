@@ -15,3 +15,41 @@
  *= require_tree .
  *= require_self
  */
+
+
+/*=========================================
+    general css content
+  =========================================*/
+
+body {
+  margin: 0px;
+}
+
+h1 {
+  margin: 0px !important;
+}
+
+.clear { 
+  clear: both; 
+}
+
+.hidden { 
+  display: none; 
+}
+
+.hide { 
+  display: none; 
+}
+
+.non_visible {
+  visibility: hidden !important;
+}
+
+a:hover {
+  background-color: transparent !important;
+  color: #000;
+}
+
+.container {
+  background-color: red;
+}
