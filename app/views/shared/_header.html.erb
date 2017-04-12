@@ -8,22 +8,39 @@
         <li class="link"><%= link_to "sign in", "#" %></li>
         <li class="divider link">|</li>
         <li class="link"><%= link_to "help", "#" %></li>
+        <li class="divider link">|</li>
+        <li class="link"><%= link_to "contact", "#" %></li>
+        <li class="divider link">|</li>
+        <li class="link"><%= link_to "about us", about_us_path %></li>
       </ul>
     </div>
     <div class="search_section">
       <ul>
-        <li class="logo"><%= link_to "first choice", "#" %></li>
+        <li class="logo">
+          <div><%= link_to "first choice", "#" %></div>
+          <!-- <div class="text">hello is it me you're looking for</div> -->
+        </li>
         <li class="search">
           <%= search_form_for(@search) do |f| %>
-           <%= f.text_field  :title_cont %>
+           <%= f.text_field  :title_cont, placeholder: "What are you looking for?" %>
            <%= f.submit 'go' %>
           <% end %>
         </li>
       </ul>
     </div>
-    <div>links</div>
-    <h1>header_section</h1>
-    <ul>
+    <div class="lower_links_section">
+      <ul>
+        <li><%= link_to "latest", "#" %></li>
+        <li><%= link_to "Shop by", "#" %></li>
+        <li><%= link_to "clothes", "#" %></li>
+        <li><%= link_to "accessories", "#" %></li>
+        <li><%= link_to "shoes", "#" %></li>
+        <li><%= link_to "bags & purses", "#" %></li>
+        <li><%= link_to "sale", "#" %></li>
+        <li><%= link_to "gifts", "#" %></li>
+      </ul>
+    </div>
+    <ul class="hide">
       <li><%= link_to "home", root_path %></li>
       <li><%= link_to "about us", about_us_path %></li>
       <li><%= link_to "login", login_path %></li>
@@ -40,4 +57,16 @@
     </ul>
   </div>
 </div>
+<div class="medium-12 columns header_bottom_container">
+  <div class="header_bottom_inner_container">
+    <div class="sub_links">
+      <ul>
+        <li><%= link_to "shop new in", root_path %></li>
+        <li class="inner_link"><%= link_to "shop dresses", about_us_path %></li>
+        <li><%= link_to "holiday shop", login_path %></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="clear"></div>
 
