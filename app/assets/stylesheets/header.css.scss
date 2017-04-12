@@ -3,6 +3,62 @@
     File: _header.html.erb
   =========================================*/
 
-.header_section {
+.header_container {
+  font-weight: 400;
+  color: #262626;
   background-color: blue;
+  padding: 0px !important;
+}
+
+.header_inner_container {
+  width: 1200px;
+  margin: auto;
+  background-color: #fff;
+}
+
+.upper_links_section {
+  background-color: #fff;
+}
+
+.upper_links_section ul {
+  margin: 0px;
+  list-style-type: none;
+  display: inline-block;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.upper_links_section ul li {
+  float: right !important;
+  text-align: right;
+}
+
+.upper_links_section ul li a {
+  font-size: 12px;
+  font-weight: 400;
+  color: #262626;
+}
+
+.divider {
+  margin: 0px 15px;
+  color: #c1c1c1;
+  // color: #f6f6f6;
+}
+
+.shopping_cart a {
+  background-color: #262626;
+  color: #fff !important;
+  font-weight: bold !important;
+  padding: 8px 35px;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin-left: 15px;
+}
+
+.shopping_cart a:hover {
+  background-color: #262626 !important;
+}
+
+.link {
+  padding: 8px 0px;
 }

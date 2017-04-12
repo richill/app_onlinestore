@@ -1,24 +1,33 @@
-<div class="medium-12 columns header_section">
-  <h1>header_section</h1>
-  <ul>
-    <li><%= link_to "home", root_path %></li>
-    <li><%= link_to "about us", about_us_path %></li>
-    <li><%= link_to "login", login_path %></li>
-    <li><%= link_to "register", register_path %></li>
-    <li><%= link_to "logout", destroy_user_session_path, method: :delete  %></li>
-    <li><%= link_to "Shop by", "#" %></li>
-    <li><%= link_to "clothes", "#" %></li>
-    <li><%= link_to "accessories", "#" %></li>
-    <li><%= link_to "shoes", "#" %></li>
-    <li><%= link_to "bags & purses", "#" %></li>
-    <li><%= link_to "sale", "#" %></li>
-    <li><%= link_to "contact", "#" %></li>
-    <li><%= link_to 'create product', new_product_path %></li>
-  </ul>
-  <div class="medium-12 columns">
-    <div class="medium-4 columns">1st column</div>
-    <div class="medium-4 columns">2nd column</div>
-    <div class="medium-4 columns">3rd column</div>  
+<div class="medium-12 columns header_container">
+  <div class="header_inner_container">
+    <div class="upper_links_section">
+      <ul>
+        <li class="shopping_cart"><%= link_to "your bag [1]", "#" %></li>
+        <li class="link"><%= link_to "register", "#" %></li>
+        <li class="divider link">|</li>
+        <li class="link"><%= link_to "sign in", "#" %></li>
+        <li class="divider link">|</li>
+        <li class="link"><%= link_to "help", "#" %></li>
+      </ul>
+    </div>
+    <div>search</div>
+    <div>links</div>
+    <h1>header_section</h1>
+    <ul>
+      <li><%= link_to "home", root_path %></li>
+      <li><%= link_to "about us", about_us_path %></li>
+      <li><%= link_to "login", login_path %></li>
+      <li><%= link_to "register", register_path %></li>
+      <li><%= link_to "logout", destroy_user_session_path, method: :delete  %></li>
+      <li><%= link_to "Shop by", "#" %></li>
+      <li><%= link_to "clothes", "#" %></li>
+      <li><%= link_to "accessories", "#" %></li>
+      <li><%= link_to "shoes", "#" %></li>
+      <li><%= link_to "bags & purses", "#" %></li>
+      <li><%= link_to "sale", "#" %></li>
+      <li><%= link_to "contact", "#" %></li>
+      <li><%= link_to 'create product', new_product_path %></li>
+    </ul>
   </div>
 </div>
 
