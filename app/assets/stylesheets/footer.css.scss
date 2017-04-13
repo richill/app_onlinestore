@@ -93,6 +93,10 @@
   text-transform: uppercase;
 }
 
+.footer_main_container .footer_links {
+  padding: 0pc !important;
+}
+
 .footer_main_container .footer_links ul {
   list-style-type: none;
   margin: 0px;
@@ -107,6 +111,10 @@
 .footer_main_container .footer_links ul li a:hover {
   text-decoration: underline;
   color: #262626 !important;
+}
+
+.footer_main_container .footer_link_info {
+  padding: 0px !important;
 }
 
 .footer_main_container .footer_link_info ul {
