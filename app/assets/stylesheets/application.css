@@ -26,7 +26,8 @@
 body {
   font-family: Helvetica,Arial,sans-serif !important;
   margin: 0px;
-  line-height: 0px;
+  /*line-height: 1.5 !important;*/
+  /*line-height: 0px;*/
 }
 
 h1 {
