@@ -18,7 +18,8 @@
 .homepg_main_container .homepg_container .homepg_inner_container {
   width: 1200px;
   margin: auto;
-  background-color: red;
+  background-color: #fff;
+  min-height: 2400px;
 }
 
 
@@ -166,37 +167,31 @@
   height: 444px;
 }
 
-
-// --------------------------------
-//     workings
-// --------------------------------
-
-
-.lower_section {
+.homepg_main_container .lower_section {
   padding: 0px !important;
 }
 
-.lower_img_content {
+.homepg_main_container .lower_img_content {
   padding: 0px !important;
 }
 
-.lower_section ul {
+.homepg_main_container .lower_section ul {
   list-style-type: none;
   margin: 0px !important;
 }
 
 
-.lower_section ul li {
+.homepg_main_container .lower_section ul li {
   float: left;
   margin-right: 16px;
 }
 
-.text_link {
+.homepg_main_container .text_link {
   text-align: center !important;
   margin: 12px 0px 25px;
 }
 
-.text_link a {
+.homepg_main_container .text_link a {
   color: #262626 !important;
   text-decoration: underline !important;
   text-transform: capitalize;
