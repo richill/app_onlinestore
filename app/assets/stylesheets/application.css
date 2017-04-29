@@ -38,16 +38,8 @@ h1 {
   clear: both; 
 }
 
-.hidden { 
-  display: none; 
-}
-
 .hide { 
   display: none; 
-}
-
-.non_visible {
-  visibility: hidden !important;
 }
 
 a:hover {
