@@ -1,7 +1,7 @@
 <div class="medium-12 columns homepg_main_container">
   <div class="medium-12 columns homepg_container">
     <div class="homepg_inner_container">
-      <div class="medium-2 columns left_column">
+      <div class="medium-3 columns left_column">
         <ul>
           <li class="header">new in</li>
           <li><%= link_to "new in clothing", "#" %></li>
@@ -81,7 +81,22 @@
           <li><%= link_to "umbrellas", "#" %></li>
         </ul>
       </div>
-      <div class="medium-10 columns right_column">right_column</div>
+      <div class="medium-9 columns right_column">
+        <div class="main_header">womenswear</div>
+        <div class="medium-12 columns upper_section">
+          <div class="medium-6 columns left_section">
+            <div class="medium-4 columns left_img"><%= link_to (image_tag "img_woman_homepg_02.png"), "#" %></div>
+            <div class="medium-8 columns left_img_content">
+              <div class="divider"></div>
+              <div class="upper_content">Dress for the day you want to have</div>
+              <div class="divider"></div>
+              <div class="lower_content">whatever the mood, we have the dress</div>
+              <div class="link_btn"><%= link_to "shop new in", "#" %></div>
+            </div>
+          </div>
+          <div class="medium-6 columns right_section"><%= link_to (image_tag "img_woman_homepg_01.jpg"), "#" %></div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
