@@ -24,8 +24,8 @@
           </div>
 
           <div class="shoes_type row_dim">
-            <%= f.association :category_shoesize, collection: CategoryShoesize.all, prompt: "select a category", label: "Shoe Size" %>
             <%= f.association :category_shoetype, collection: CategoryShoetype.all, prompt: "select a category", label: "Shoe Type" %>
+            <%= f.association :category_shoesize, collection: CategoryShoesize.all, prompt: "select a category", label: "Shoe Size", as: :check_boxes %>
           </div>
 
           <div class="bag_type row_dim">
@@ -33,7 +33,6 @@
           </div>
 
           <div class="gift_type row_dim">
-            i am the gift section
           </div>
 
           <div>
