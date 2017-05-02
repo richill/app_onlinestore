@@ -12,10 +12,12 @@
           
           <div class="clothes_type row_dim">
             <%= f.association :category_clothetype, collection: CategoryClothetype.all, prompt: "select a category", label: "Clothe Type" %>
-            <%= f.association :category_clothesize, collection: CategoryClothesize.all, prompt: "select a category", label: "Clothe Size [multiple: what sizes is this dress available in?", as: :check_boxes %><br/>
+
+            <div class="question_header">Clothe Size [multiple: what sizes is this dress available in? <%= link_to "size guide", "#" %></div>
+            <%= f.association :category_clothesize, collection: CategoryClothesize.all, prompt: "select a category", label: false, as: :check_boxes %><br/>
             
             <div class="clear"></div>
-            <div class="question_header">Size [multiple: what sizes is this dress available in?</div>
+            <div class="question_header">Size [multiple: what sizes is this dress available in? <%= link_to "size guide", "#" %></div>
             <%= f.association :category_generalsize, collection: CategoryGeneralsize.all, prompt: "select a category", label: false, as: :check_boxes %>
           </div>
 
@@ -25,7 +27,9 @@
 
           <div class="shoes_type row_dim">
             <%= f.association :category_shoetype, collection: CategoryShoetype.all, prompt: "select a category", label: "Shoe Type" %>
-            <%= f.association :category_shoesize, collection: CategoryShoesize.all, prompt: "select a category", label: "Shoe Size", as: :check_boxes %>
+
+            <div class="question_header">Shoe Size [multiple: what shoe sizes is this shoe available in? <%= link_to "size guide", "#" %></div>
+            <%= f.association :category_shoesize, collection: CategoryShoesize.all, prompt: "select a category", label: false, as: :check_boxes %>
           </div>
 
           <div class="bag_type row_dim">
