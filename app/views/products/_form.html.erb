@@ -6,14 +6,35 @@
       <div class="medium-12 columns">
         <!-- left_section -->
         <div class="medium-6 columns">
-          <%= f.input :title, placeholder: "Floral Print Ruffle Wrap Dress" %>
-          <%= f.input :price, placeholder: "39.50" %>
-          <%= f.association :category_type, collection: CategoryType.all, prompt: "select a category", label: "Type" %>
-          <%= f.association :category_clothetype, collection: CategoryClothetype.all, prompt: "select a category", label: "Clothe Type" %>
-          <%= f.association :category_colour, collection: CategoryColour.all, prompt: "select a category", label: "Colour" %>
-          <%= f.association :category_clothesize, collection: CategoryClothesize.all, prompt: "select a category", label: "Clothe Size" %>
-          <%= f.association :category_generalsize, collection: CategoryGeneralsize.all, prompt: "select a category", label: "Size" %>
-          <%= f.input :description, placeholder: "Designed for a slim fit to follow the contours of the body, choose your normal size. Take a look at our size guides for more information. Floral prints are an on-trend and feminine way to boost your outfit." %>
+          <div><%= f.input :title, placeholder: "Floral Print Ruffle Wrap Dress" %></div>
+          <div><%= f.input :price, placeholder: "39.50" %></div>
+          <div><%= f.association :category_type, collection: CategoryType.all, prompt: "select a category", label: "Type" %></div>
+          
+          
+          
+
+          <div class="clothes_type">
+            <%= f.association :category_clothetype, collection: CategoryClothetype.all, prompt: "select a category", label: "Clothe Type" %>
+            <%= f.association :category_clothesize, collection: CategoryClothesize.all, prompt: "select a category", label: "Clothe Size" %>
+            <%= f.association :category_generalsize, collection: CategoryGeneralsize.all, prompt: "select a category", label: "Size" %>
+          </div>
+
+          <div class="accessories_type">
+            <%= f.association :category_accessorytype, collection: CategoryAccessorytype.all, prompt: "select a category", label: "Accessory Type" %>
+          </div>
+
+          <div class="shoes_type">
+            <%= f.association :category_shoesize, collection: CategoryShoesize.all, prompt: "select a category", label: "Shoe Size" %>
+            <%= f.association :category_shoetype, collection: CategoryShoetype.all, prompt: "select a category", label: "Shoe Type" %>
+          </div>
+
+          <div class="bag_type">
+            <%= f.association :category_bagtype, collection: CategoryBagtype.all, prompt: "select a category", label: "Bag Type" %>
+          </div>
+
+          <div><%= f.association :category_colour, collection: CategoryColour.all, prompt: "select a category", label: "Colour" %></div>
+          <div><%= f.input :description, placeholder: "Designed for a slim fit to follow the contours of the body, choose your normal size. Take a look at our size guides for more information. Floral prints are an on-trend and feminine way to boost your outfit." %></div>
+          
         </div>
         
 
@@ -23,12 +44,11 @@
           <%= f.input :saleprice %>
           <%= f.input :stock %>
 
-          <div>-----------</div>
-          <%= f.association :category_accessorytype, collection: CategoryAccessorytype.all, prompt: "select a category", label: "Accessory Type" %>
-          <%= f.association :category_bagtype, collection: CategoryBagtype.all, prompt: "select a category", label: "Bag Type" %>
-          <%= f.association :category_brand, collection: CategoryBrand.all, prompt: "select a category", label: "Brand Type" %>
-          <%= f.association :category_shoesize, collection: CategoryShoesize.all, prompt: "select a category", label: "Shoe Size" %>
-          <%= f.association :category_shoetype, collection: CategoryShoetype.all, prompt: "select a category", label: "Shoe Type" %>
+  
+          
+          
+          <%# f.association :category_brand, collection: CategoryBrand.all, prompt: "select a category", label: "Brand Type" %>
+          
         </div>
       </div>
     </div>
