@@ -10,7 +10,6 @@
           <div><%= f.input :price, placeholder: "39.50" %></div>
           <div><%= f.association :category_type, collection: CategoryType.all, prompt: "select a category", label: "Type" %></div>
           
-          
           <div class="clothes_type row_dim">
             <%= f.association :category_clothetype, collection: CategoryClothetype.all, prompt: "select a category", label: "Clothe Type" %>
             <%= f.association :category_clothesize, collection: CategoryClothesize.all, prompt: "select a category", label: "Clothe Size" %>
@@ -36,21 +35,16 @@
 
           <div><%= f.association :category_colour, collection: CategoryColour.all, prompt: "select a category", label: "Colour" %></div>
           <div><%= f.input :description, placeholder: "Designed for a slim fit to follow the contours of the body, choose your normal size. Take a look at our size guides for more information. Floral prints are an on-trend and feminine way to boost your outfit." %></div>
-          
         </div>
         
 
         <!-- right_section -->
         <div class="medium-6 columns">
+          <%= f.input :stock %>
+          <%= f.input :new, label: "Is this a new recent item?" %>
           <%= f.input :sale, label: "Sale: Item on sale?" %>
           <%= f.input :saleprice %>
-          <%= f.input :stock %>
-
-  
-          
-          
           <%# f.association :category_brand, collection: CategoryBrand.all, prompt: "select a category", label: "Brand Type" %>
-          
         </div>
       </div>
     </div>
