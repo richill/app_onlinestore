@@ -7,7 +7,6 @@
     <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
 
     <%= stylesheet_link_tag    "application" %>
-    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
 
@@ -17,5 +16,9 @@
       <%= yield %>
       <%= render 'shared/footer' %>
     </div>
+
+    <!-- script tags -->
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <!-- script tags -->
   </body>
 </html>

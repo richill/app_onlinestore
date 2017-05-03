@@ -36,7 +36,9 @@ $(function() {
             $('.accessories_type').hide();
             $('.shoes_type').hide();
             $('.bag_type').hide(); 
-        } 
+        } else {
+            $('.row_dim').hide();
+        }  
     });
 });
 
