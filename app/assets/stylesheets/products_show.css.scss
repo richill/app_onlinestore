@@ -23,13 +23,35 @@
 }
 
 
+// ----- product show content -----
 
 
 
+// ---------------------------
+//     workings
+// ---------------------------
 
+.tree_line {
+  font-size: 10px;
+  font-weight: bold;
+  color: #262626;
+  text-transform: capitalize;
+}
 
+.tree_line a {
+  font-size: 10px;
+  font-weight: bold;
+  color: #262626 !important;
+  text-transform: capitalize;
+}
 
+.tree_line a:hover {
+  text-decoration: underline;
+}
 
+.tree_line .divider {
+  margin: 0px 5px;
+}
 
 
 
