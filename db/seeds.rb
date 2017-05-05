@@ -107,6 +107,11 @@ cc18 = CategoryColour.create!(name:'Yellow')
 cc19 = CategoryColour.create!(name:'Multi')
 cc20 = CategoryColour.create!(name:'Stone')
 
+CategoryCurrency.delete_all
+cgc01 = CategoryCurrency.create!(name:'Cedis')
+cgc02 = CategoryCurrency.create!(name:'Dollars')
+cgc03 = CategoryCurrency.create!(name:'Pounds')
+
 CategoryGeneralsize.delete_all
 cgs01 = CategoryGeneralsize.create!(name:'XS')
 cgs02 = CategoryGeneralsize.create!(name:'S')

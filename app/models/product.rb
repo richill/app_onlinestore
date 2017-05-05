@@ -6,6 +6,7 @@ class Product < ApplicationRecord
   belongs_to :category_colour, dependent: :destroy 
   belongs_to :category_shoetype, dependent: :destroy
   belongs_to :category_type, dependent: :destroy
+  belongs_to :category_currency, dependent: :destroy
 
   has_and_belongs_to_many :category_clothesize, dependent: :destroy
   has_and_belongs_to_many :category_generalsize, dependent: :destroy

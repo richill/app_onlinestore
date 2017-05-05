@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170505105937) do
+ActiveRecord::Schema.define(version: 20170505124758) do
 
   create_table "category_accessorytypes", force: :cascade do |t|
     t.string   "name"
@@ -48,6 +48,12 @@ ActiveRecord::Schema.define(version: 20170505105937) do
   end
 
   create_table "category_colours", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "category_currencies", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -108,6 +114,7 @@ ActiveRecord::Schema.define(version: 20170505105937) do
     t.integer  "category_shoetype_id"
     t.integer  "category_type_id"
     t.boolean  "product_new"
+    t.integer  "category_currency_id"
   end
 
   create_table "users", force: :cascade do |t|
