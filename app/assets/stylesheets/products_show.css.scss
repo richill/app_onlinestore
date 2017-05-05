@@ -24,6 +24,34 @@
 
 
 // ----- product show content -----
+.product_show_main_container .tree_line {
+  font-size: 10px;
+  font-weight: bold;
+  color: #262626;
+  text-transform: capitalize;
+  margin: 15px 0px;
+  letter-spacing: 1px;
+}
+
+.product_show_main_container .tree_line a {
+  font-size: 10px;
+  font-weight: bold;
+  color: #262626 !important;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.product_show_main_container .tree_line a:hover {
+  text-decoration: underline;
+}
+
+.product_show_main_container .tree_line .divider {
+  margin: 0px 5px;
+}
+
+.product_show_main_container .product_show_details {
+  padding: 20px 0px;
+}
 
 
 
@@ -31,54 +59,84 @@
 //     workings
 // ---------------------------
 
-.tree_line {
-  font-size: 10px;
-  font-weight: bold;
-  color: #262626;
-  text-transform: capitalize;
-  margin: 15px 0px;
-}
-
-.tree_line a {
-  font-size: 10px;
-  font-weight: bold;
-  color: #262626 !important;
-  text-transform: capitalize;
-}
-
-.tree_line a:hover {
-  text-decoration: underline;
-}
-
-.tree_line .divider {
-  margin: 0px 5px;
-}
-
-.product_show_details {
-  padding: 20px 0px;
-  // background-color: red;
-}
-
 // --- left_content ---
 .left_content {
   padding: 0px !important;
 }
 
 // --- middle_content ---
-.item_title {
+.middle_content .item_title {
+  position: relative;
+}
+
+.middle_content .item_title .product_item {
   font-size: 20px;
   color: #262626 !important;
   text-transform: capitalize;
 }
 
-.item_label, .item_ref {
+.middle_content .product_new {
+  background-color: #262626;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+}
+
+.middle_content .item_label, .item_ref {
   font-size: 10px;
   text-transform: uppercase;
   color: #666 !important;
 }
 
-.price_review_section {
-  margin: 15px 0px;
+.middle_content .price_review_section {
+  margin: 8px 0px;
+}
+
+.middle_content .price_currency {
+  margin: 10px 0px;
+}
+
+.middle_content .price_currency .currency, .price {
+  font-size: 20px;
+}
+
+.middle_content .price_currency .currency {
+  width: 9px;
+  display: inline-block;
+}
+
+.middle_content .now_text {
+  margin-left: 15px;
+  font-size: 11px;
+  color: #E34B51;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+.middle_content .price_sale {
+  font-size: 20px;
+  text-decoration: line-through;
+}
+
+.middle_content .sale_item .price, .sale_item .currency {
+  color: #E34B51 !important;
+}
+
+.middle_content .minor_info {
+  padding: 10px 0px;
+  border-top: 1px dotted #a3a3a3;
+  border-bottom: 1px dotted #a3a3a3;
+  clear: both;
+  font-size: 11px;
+  color: #E34B51;
+  letter-spacing: 1px;
+  word-spacing: 1px;
 }
 
 // --- right_content ---
