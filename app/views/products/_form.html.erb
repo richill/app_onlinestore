@@ -1,66 +1,85 @@
-<div class="medium-12 columns product_form_container">
-  <%= simple_form_for(@product) do |f| %>
-    <%= f.error_notification %>
+<div class="product_form_content">
 
-    <div class="form-inputs">
-      <div class="medium-12 columns">
-        <!-- left_section -->
-        <div class="medium-6 columns">
-          <div><%= f.input :title, placeholder: "Floral Print Ruffle Wrap Dress" %></div>
-          <div><%= f.input :price, placeholder: "39.50" %></div>
-          <div><%= f.association :category_type, collection: CategoryType.all, prompt: "select a category", label: "Type" %></div>
-          
-          <div class="clothes_type row_dim">
-            <%= f.association :category_clothetype, collection: CategoryClothetype.all, prompt: "select a category", label: "Clothe Type" %>
+<%= simple_form_for(@product) do |f| %>
+  <%= f.error_notification %>
 
-            <div class="question_header">Clothe Size [multiple]: what sizes is this dress available in? <%= link_to "size guide", "#" %></div>
-            <%= f.association :category_clothesize, collection: CategoryClothesize.all, prompt: "select a category", label: false, as: :check_boxes %><br/>
-            
-            <div class="clear"></div>
-            <div class="question_header">Size [multiple]: what sizes is this dress available in? <%= link_to "size guide", "#" %></div>
-            <%= f.association :category_generalsize, collection: CategoryGeneralsize.all, prompt: "select a category", label: false, as: :check_boxes %>
-          </div>
-
-          <div class="accessories_type row_dim">
-            <%= f.association :category_accessorytype, collection: CategoryAccessorytype.all, prompt: "select a category", label: "Accessory Type" %>
-          </div>
-
-          <div class="shoes_type row_dim">
-            <%= f.association :category_shoetype, collection: CategoryShoetype.all, prompt: "select a category", label: "Shoe Type" %>
-
-            <div class="question_header">Shoe Size [multiple]: what shoe sizes is this shoe available in? <%= link_to "size guide", "#" %></div>
-            <%= f.association :category_shoesize, collection: CategoryShoesize.all, prompt: "select a category", label: false, as: :check_boxes %>
-          </div>
-
-          <div class="bag_type row_dim">
-            <%= f.association :category_bagtype, collection: CategoryBagtype.all, prompt: "select a category", label: "Bag Type" %>
-          </div>
-
-          <div class="gift_type row_dim">
-          </div>
-
-          <div>
-            <div class="clear"></div>
-            <div class="question_header">Colour</div>
-            <%= f.association :category_colour, collection: CategoryColour.all, prompt: "select a category", label: false %>
-          </div>
-          <div><%= f.input :description, placeholder: "Designed for a slim fit to follow the contours of the body, choose your normal size. Take a look at our size guides for more information. Floral prints are an on-trend and feminine way to boost your outfit." %></div>
-        </div>
+  <div class="form-inputs">
+    <div class="medium-12 columns">
+      <!-- left_section -->
+      <div class="medium-6 columns">
+        <div><%= f.input :title, placeholder: "Floral Print Ruffle Wrap Dress" %></div>
+        <div><%= f.input :price, placeholder: "39.50" %></div>
+        <div><%= f.association :category_type, collection: CategoryType.all, prompt: "select a category", label: "Type" %></div>
         
+        <div class="clothes_type row_dim">
+          <%= f.association :category_clothetype, collection: CategoryClothetype.all, prompt: "select a category", label: "Clothe Type" %>
 
-        <!-- right_section -->
-        <div class="medium-6 columns">
-          <%= f.input :stock %>
-          <%= f.input :product_new, label: "Is this a new recent item?" %>
-          <%= f.input :sale, label: "Sale: Item on sale?" %>
-          <%= f.input :saleprice %>
-          <%# f.association :category_brand, collection: CategoryBrand.all, prompt: "select a category", label: "Brand Type" %>
+          <div class="question_header">Clothe Size [multiple]: what sizes is this dress available in? <%= link_to "size guide", "#" %></div>
+          <%= f.association :category_clothesize, collection: CategoryClothesize.all, prompt: "select a category", label: false, as: :check_boxes %><br/>
+          
+          <div class="clear"></div>
+          <div class="question_header">Size [multiple]: what sizes is this dress available in? <%= link_to "size guide", "#" %></div>
+          <%= f.association :category_generalsize, collection: CategoryGeneralsize.all, prompt: "select a category", label: false, as: :check_boxes %>
         </div>
+
+        <div class="accessories_type row_dim">
+          <%= f.association :category_accessorytype, collection: CategoryAccessorytype.all, prompt: "select a category", label: "Accessory Type" %>
+        </div>
+
+        <div class="shoes_type row_dim">
+          <%= f.association :category_shoetype, collection: CategoryShoetype.all, prompt: "select a category", label: "Shoe Type" %>
+
+          <div class="question_header">Shoe Size [multiple]: what shoe sizes is this shoe available in? <%= link_to "size guide", "#" %></div>
+          <%= f.association :category_shoesize, collection: CategoryShoesize.all, prompt: "select a category", label: false, as: :check_boxes %>
+        </div>
+
+        <div class="bag_type row_dim">
+          <%= f.association :category_bagtype, collection: CategoryBagtype.all, prompt: "select a category", label: "Bag Type" %>
+        </div>
+
+        <div class="gift_type row_dim">
+        </div>
+
+        <div>
+          <div class="clear"></div>
+          <div class="question_header">Colour</div>
+          <%= f.association :category_colour, collection: CategoryColour.all, prompt: "select a category", label: false %>
+        </div>
+        <div><%= f.input :description, placeholder: "Designed for a slim fit to follow the contours of the body, choose your normal size. Take a look at our size guides for more information. Floral prints are an on-trend and feminine way to boost your outfit." %></div>
+      </div>
+      
+
+      <!-- right_section -->
+      <div class="medium-6 columns">
+        <%= f.input :stock %>
+        <%= f.input :product_new, label: "Is this a new recent item?" %>
+        <%= f.input :sale, label: "Sale: Item on sale?" %>
+        <%= f.input :saleprice %>
+        <%# f.association :category_brand, collection: CategoryBrand.all, prompt: "select a category", label: "Brand Type" %>
       </div>
     </div>
+  </div>
 
-    <div class="form-actions">
-      <%= f.button :submit %>
-    </div>
-  <% end %>
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+

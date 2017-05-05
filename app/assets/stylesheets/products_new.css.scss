@@ -1,0 +1,23 @@
+/*=========================================
+    Section: Product New
+    File: products / new.html.erb
+  =========================================*/
+
+.product_new_main_container {
+  padding: 0px !important;
+}
+
+.product_new_main_container .product_new_container {
+  font-weight: 400;
+  color: #262626;
+  background-color: #fff;
+  padding: 0px !important;
+  border-bottom: 5px solid #262626;
+}
+
+.product_new_main_container .product_new_container .product_new_inner_container {
+  width: 1200px;
+  margin: auto;
+  background-color: #fff;
+  min-height: 2400px;
+}

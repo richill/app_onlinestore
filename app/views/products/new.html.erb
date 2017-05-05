@@ -1,5 +1,15 @@
-<h1>New Product</h1>
+<div class="medium-12 columns product_new_main_container">
+  <div class="medium-12 columns product_new_container">
+    <div class="product_new_inner_container">
+  
+      <div class="product_new_form_content">
+        <p id="notice"><%= notice %></p>
+        <h1>New Product</h1>
+        <%= render 'form', product: @product %>
+        <%= link_to 'Back', products_path %>
+      </div>
 
-<%= render 'form', product: @product %>
-
-<%= link_to 'Back', products_path %>
+    </div>
+  </div>
+</div>
+<div class="clear"></div>

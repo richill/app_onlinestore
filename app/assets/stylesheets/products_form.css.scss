@@ -1,0 +1,35 @@
+/*=========================================
+    Section: Product Form
+    File: products / _form.html.erb
+  =========================================*/
+
+.product_form_content .product_category_clothesize .check_boxes {
+  margin-right: 2px;
+}
+
+.product_form_content .product_category_clothesize .checkbox {
+  float: left;
+  margin-right: 15px;
+}
+
+.product_form_content .product_category_generalsize .check_boxes {
+  margin-right: 2px;
+}
+
+.product_form_content .product_category_generalsize .checkbox {
+  float: left;
+  margin-right: 15px;
+}
+
+.product_form_content .question_header {
+  font-size: 15px;
+}
+
+.product_form_content .product_category_shoesize .check_boxes {
+  margin-right: 2px;
+}
+
+.product_form_content .product_category_shoesize .checkbox {
+  float: left;
+  margin-right: 15px;
+}

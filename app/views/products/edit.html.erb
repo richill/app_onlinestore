@@ -1,6 +1,21 @@
-<h1>Editing Product</h1>
+<div class="medium-12 columns product_edit_main_container">
+  <div class="medium-12 columns product_edit_container">
+    <div class="product_edit_inner_container">
+  
+      <div class="product_edit_form_content">
+        <p id="notice"><%= notice %></p>
+        <h1>Editing Product</h1>
+        <%= render 'form', product: @product %>
+        <%= link_to 'Show', @product %> |
+        <%= link_to 'Back', products_path %>
+      </div>
 
-<%= render 'form', product: @product %>
+    </div>
+  </div>
+</div>
+<div class="clear"></div>
 
-<%= link_to 'Show', @product %> |
-<%= link_to 'Back', products_path %>
+
+
+
+

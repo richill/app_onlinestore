@@ -1,43 +1,60 @@
+<div class="medium-12 columns product_show_main_container">
+  <div class="medium-12 columns product_show_container">
+    <div class="product_show_inner_container">
+  
+      <div class="product_show_content">
+  
+        <div class="tree_line">
+          <span>home</span>
+          <span>/</span>
+          <span>women</span>
+          <span>dresses</span>
+        </div>
+        <p>
+          <strong>Title:</strong>
+          <%= @product.title %>
+        </p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @product.title %>
-</p>
+        <p>
+          <strong>Description:</strong>
+          <%= @product.description %>
+        </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
+        <p>
+          <strong>Price:</strong>
+          <%= @product.price %>
+        </p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
+        <p>
+          <strong>Saleprice:</strong>
+          <%= @product.saleprice %>
+        </p>
 
-<p>
-  <strong>Saleprice:</strong>
-  <%= @product.saleprice %>
-</p>
+        <p>
+          <strong>Reference:</strong>
+          <%= @product.reference %>
+        </p>
 
-<p>
-  <strong>Reference:</strong>
-  <%= @product.reference %>
-</p>
+        <p>
+          <strong>Stock:</strong>
+          <%= @product.stock %>
+        </p>
 
-<p>
-  <strong>Stock:</strong>
-  <%= @product.stock %>
-</p>
+        <p>
+          <strong>Sale:</strong>
+          <%= @product.sale %>
+        </p>
 
-<p>
-  <strong>Sale:</strong>
-  <%= @product.sale %>
-</p>
+        <p>
+          <strong>New:</strong>
+          <%= @product.product_new %>
+        </p>
 
-<p>
-  <strong>New:</strong>
-  <%= @product.product_new %>
-</p>
+        <%= link_to 'Edit', edit_product_path(@product) %> |
+        <%= link_to 'Back', products_path %>
+      </div>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+    </div>
+  </div>
+</div>
+<div class="clear"></div>
