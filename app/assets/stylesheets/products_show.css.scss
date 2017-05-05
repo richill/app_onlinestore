@@ -36,6 +36,7 @@
   font-weight: bold;
   color: #262626;
   text-transform: capitalize;
+  margin: 15px 0px;
 }
 
 .tree_line a {
@@ -52,6 +53,37 @@
 .tree_line .divider {
   margin: 0px 5px;
 }
+
+.product_show_details {
+  padding: 20px 0px;
+  // background-color: red;
+}
+
+// --- left_content ---
+.left_content {
+  padding: 0px !important;
+}
+
+// --- middle_content ---
+.item_title {
+  font-size: 20px;
+  color: #262626 !important;
+  text-transform: capitalize;
+}
+
+.item_label, .item_ref {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #666 !important;
+}
+
+.price_review_section {
+  margin: 15px 0px;
+}
+
+// --- right_content ---
+
+
 
 
 

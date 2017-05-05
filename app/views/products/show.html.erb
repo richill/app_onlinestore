@@ -10,50 +10,64 @@
           <span class="divider">/</span>
           <span>dresses</span>
         </div>
-        <p>
-          <strong>Title:</strong>
-          <%= @product.title %>
-        </p>
+        <div class="product_show_details">
+          <div class="medium-3 columns left_content">
+            <div class="image_conrainer">
+              <%= image_tag("img_clothe_01.jpg") %>
+            </div>
+          </div>
+          <div class="medium-8 columns middle_content">
+            <div class="item_label">firstchoice collection</div>
+            <div class="item_title"><%= @product.title %></div>
+            <div class="item_ref">T422228</div>
+            <div class="price_review_section">
+              <div><%= @product.price %></div>
+            </div>
+      
 
-        <p>
-          <strong>Description:</strong>
-          <%= @product.description %>
-        </p>
+            <p>
+              <strong>Description:</strong>
+              <%= @product.description %>
+            </p>
 
-        <p>
-          <strong>Price:</strong>
-          <%= @product.price %>
-        </p>
+            <p>
+              <strong>Price:</strong>
+              
+            </p>
 
-        <p>
-          <strong>Saleprice:</strong>
-          <%= @product.saleprice %>
-        </p>
+            <p>
+              <strong>Saleprice:</strong>
+              <%= @product.saleprice %>
+            </p>
 
-        <p>
-          <strong>Reference:</strong>
-          <%= @product.reference %>
-        </p>
+            <p>
+              <strong>Reference:</strong>
+              <%= @product.reference %>
+            </p>
 
-        <p>
-          <strong>Stock:</strong>
-          <%= @product.stock %>
-        </p>
+            <p>
+              <strong>Stock:</strong>
+              <%= @product.stock %>
+            </p>
 
-        <p>
-          <strong>Sale:</strong>
-          <%= @product.sale %>
-        </p>
+            <p>
+              <strong>Sale:</strong>
+              <%= @product.sale %>
+            </p>
 
-        <p>
-          <strong>New:</strong>
-          <%= @product.product_new %>
-        </p>
+            <p>
+              <strong>New:</strong>
+              <%= @product.product_new %>
+            </p>
 
-        <%= link_to 'Edit', edit_product_path(@product) %> |
-        <%= link_to 'Back', products_path %>
+            <%= link_to 'Edit', edit_product_path(@product) %> |
+            <%= link_to 'Back', products_path %>
+          </div>
+          <div class="medium-1 columns right_content">right_content</div>
+          <div class="clear"></div>
+          
+        </div>
       </div>
-
     </div>
   </div>
 </div>
