@@ -206,6 +206,37 @@
   color: #666 !important;
 }
 
+.size_other {
+  margin-top: 10px;
+}
+
+.size_other ul {
+  list-style: none !important;
+  margin: 0px !important;
+}
+
+
+.size_other ul li {
+  font-size: 12px;
+  float: left;
+  background-color: #f6f6f6;
+  border: 1px solid #c1c1c1;
+  padding: 8px;
+}
+
+
+.size_other span {
+  float: left;
+}
+
+.size_subtitle {
+  font-size: 12px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-right: 5px;
+  padding: 10px 0px;
+}
+
 
 // --- right_content ---
 

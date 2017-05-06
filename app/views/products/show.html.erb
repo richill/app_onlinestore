@@ -142,14 +142,14 @@
                 <span class="size_title">select size</span>
                 <span class="size_guide"><i class="fa fa-scissors" aria-hidden="true"></i> <%= link_to "Size guide" %></span>
                 <div class="clear"></div>
-                <div>
-                  <span>available size: </span>
+                <div class="size_other">
+                  <span class="size_subtitle">available size:</span>
                   <span>
-                  <ul>
-                    <% @product.category_clothesize.each do |size| %>
-                      <li><%= size.name %></li>
-                    <% end %>
-                  </ul>
+                    <ul>
+                      <% @product.category_clothesize.each do |size| %>
+                        <li><%= size.name %></li>
+                      <% end %>
+                    </ul>
                   </span>
                 </div>
               </div>
