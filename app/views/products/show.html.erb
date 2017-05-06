@@ -86,33 +86,60 @@
               Free standard delivery on orders over £50. Conditions apply.
             </div>
 
-            <div class="colour_info">
+            <div class="medium-12 columns colour_info">
               <span class="colour_title">item colour: </span>
               <span class="item_colour"><%= @product.category_colour.name %></span>
+              <div class="clear"></div> 
               <div class="listed_colours">
                 <ul>
-                  <li class="beige"></li>
-                  <li class="blue"></li>
-                  <li class="black"></li>
-                  <li class="borwn"></li>
-                  <li class="copper"></li>
-                  <li class="cream"></li>
-                  <li class="gold"></li>
-                  <li class="green"></li>
-                  <li class="grey"></li>
-                  <li class="navy"></li>
-                  <li class="orange"></li>
-                  <li class="pink"></li>
-                  <li class="purple"></li>
-                  <li class="red"></li>
-                  <li class="silver"></li>
-                  <li class="tan"></li>
-                  <li class="white"></li>
-                  <li class="yellow"></li>
-                  <li class="multi"></li>
-                  <li class="stone"></li>
+                  <% if @product.category_colour.name == "Beige" %>
+                    <li class="beige"></li>
+                  <% elsif @product.category_colour.name == "Blue" %>
+                    <li class="blue"></li>
+                  <% elsif @product.category_colour.name == "Black" %>
+                    <li class="black"></li>
+                  <% elsif @product.category_colour.name == "Brown" %>
+                    <li class="borwn"></li>
+                  <% elsif @product.category_colour.name == "Copper" %>
+                    <li class="copper"></li>
+                  <% elsif @product.category_colour.name == "Cream" %>
+                    <li class="cream"></li>
+                  <% elsif @product.category_colour.name == "Gold" %>
+                    <li class="gold"></li>
+                  <% elsif @product.category_colour.name == "Green" %>
+                    <li class="green"></li>
+                  <% elsif @product.category_colour.name == "Grey" %>
+                    <li class="grey"></li>
+                  <% elsif @product.category_colour.name == "Navy" %>
+                    <li class="navy"></li>
+                  <% elsif @product.category_colour.name == "Orange" %>
+                    <li class="orange"></li>
+                  <% elsif @product.category_colour.name == "Pink" %>
+                    <li class="pink"></li>
+                  <% elsif @product.category_colour.name == "Purple" %>
+                    <li class="purple"></li>
+                  <% elsif @product.category_colour.name == "Red" %>
+                    <li class="red"></li>
+                  <% elsif @product.category_colour.name == "Silver" %>
+                    <li class="silver"></li>
+                  <% elsif @product.category_colour.name == "Tan" %>
+                    <li class="tan"></li>
+                  <% elsif @product.category_colour.name == "White" %>
+                    <li class="white"></li>
+                  <% elsif @product.category_colour.name == "Yellow" %>
+                    <li class="yellow"></li>
+                  <% elsif @product.category_colour.name == "Multi" %>
+                    <li class="multi"></li>
+                  <% elsif @product.category_colour.name == "Stone" %>
+                    <li class="stone"></li>
+                  <% end %>
                 </ul>
               </div>
+            </div>
+
+            <div class="medium-12 columns size_info">
+              <span class="size_title">select size</span>
+              <span class="size_guide"><i class="fa fa-scissors" aria-hidden="true"></i> <%= link_to "Size guide" %></span>
             </div>
 
 
