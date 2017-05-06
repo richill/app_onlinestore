@@ -82,23 +82,59 @@
             <% end %>
             </div>
 
-
-
             <div class="minor_info">
               Free standard delivery on orders over £50. Conditions apply.
             </div>
+
+            <div class="colour_info">
+              <span class="colour_title">item colour: </span>
+              <span class="item_colour"><%= @product.category_colour.name %></span>
+              <div class="listed_colours">
+                <ul>
+                  <li class="beige"></li>
+                  <li class="blue"></li>
+                  <li class="black"></li>
+                  <li class="borwn"></li>
+                  <li class="copper"></li>
+                  <li class="cream"></li>
+                  <li class="gold"></li>
+                  <li class="green"></li>
+                  <li class="grey"></li>
+                  <li class="navy"></li>
+                  <li class="orange"></li>
+                  <li class="pink"></li>
+                  <li class="purple"></li>
+                  <li class="red"></li>
+                  <li class="silver"></li>
+                  <li class="tan"></li>
+                  <li class="white"></li>
+                  <li class="yellow"></li>
+                  <li class="multi"></li>
+                  <li class="stone"></li>
+                </ul>
+              </div>
+            </div>
+
+
+
+
+
+
+
     
-            <p>
+            <p class="hide">
               <strong>Description:</strong>
               <%= @product.description %>
             </p>
-            <p>
+            <p class="hide">
               <strong>Stock:</strong>
               <%= @product.stock %>
             </p>
 
-            <%= link_to 'Edit', edit_product_path(@product) %> |
-            <%= link_to 'Back', products_path %>
+            <div class="hide">
+              <%= link_to 'Edit', edit_product_path(@product) %> |
+              <%= link_to 'Back', products_path %>
+            </div>
           </div>
           <div class="medium-3 columns right_content">right_content</div>
           <div class="clear"></div>

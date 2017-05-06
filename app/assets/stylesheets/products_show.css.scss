@@ -139,6 +139,39 @@
   word-spacing: 1px;
 }
 
+.colour_title {
+  font-size: 18px;
+  color: #262626 !important;
+  text-transform: capitalize;
+}
+
+.item_colour {
+  font-size: 16px;
+  color: #262626 !important;
+  text-transform: capitalize;
+  font-weight: 300 !important;
+}
+
+.listed_colours ul {
+  list-style: none !important;
+  margin: 0px !important;
+}
+
+.listed_colours ul li {
+  float: left;
+  height: 45px;
+  width: 45px;
+  border: 2px solid #262626;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.listed_colours ul .red {
+  background-color: #E34B51;
+}
+
+
+
 // --- right_content ---
 
 
