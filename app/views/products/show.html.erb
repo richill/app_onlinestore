@@ -137,9 +137,22 @@
               </div>
             </div>
 
-            <div class="medium-12 columns size_info">
-              <span class="size_title">select size</span>
-              <span class="size_guide"><i class="fa fa-scissors" aria-hidden="true"></i> <%= link_to "Size guide" %></span>
+            <div class="medium-12 columns detail_info">
+              <div class="size_info">
+                <span class="size_title">select size</span>
+                <span class="size_guide"><i class="fa fa-scissors" aria-hidden="true"></i> <%= link_to "Size guide" %></span>
+                <div class="clear"></div>
+                <div>
+                  <span>available size: </span>
+                  <span>
+                  <ul>
+                    <% @product.category_clothesize.each do |size| %>
+                      <li><%= size.name %></li>
+                    <% end %>
+                  </ul>
+                  </span>
+                </div>
+              </div>
             </div>
 
 
