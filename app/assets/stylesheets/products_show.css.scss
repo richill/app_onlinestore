@@ -250,6 +250,23 @@
   font-size: 18px;
 }
 
+.description_section {
+  border-top: 5px solid #262626 !important;
+}
+
+.description_section .header {
+  font-size: 16px;
+  color: #262626 !important;
+  text-transform: capitalize;
+  padding: 10px 15px;
+}
+
+.description_content {
+  font-size: 12px;
+  background-color: #F8F8F8;
+  padding: 10px 15px;
+}
+
 
 // --- right_content ---
 
