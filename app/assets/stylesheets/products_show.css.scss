@@ -64,6 +64,10 @@
   padding: 0px !important;
 }
 
+.left_content img {
+  height: 100% !important;
+}
+
 // --- middle_content ---
 .middle_content .item_title {
   position: relative;
@@ -258,13 +262,7 @@
 
 .middle_content .detail_info {
   border-bottom: 1px solid #c1c1c1;
-  padding: 15px 0px !important;
-}
-
-.middle_content .size_title {
-  font-size: 18px;
-  color: #262626 !important;
-  text-transform: capitalize;
+  padding: 23px 0px !important;
 }
 
 .middle_content .size_guide {
@@ -318,16 +316,27 @@
 }
 
 .middle_content .save_item a {
-  background-color: green;
-  border: 1px solid green;
   color: #262626 !important;
-  height: 43px !important;
   display: inline-block;
-  width: 250px;
+  width: 100%;
   text-align: center;
   margin-top: 15px;
   padding: 7px 0px;
   font-size: 18px;
+  font-size: 16px;
+  color: #000;
+  background-color: #CDDF59;
+  background: -webkit-gradient('linear',top,#CDDF59 0,#B7C74E 100%);
+  background: -webkit-linear-gradient(top,#CDDF59 0,#B7C74E 100%);
+  background: -moz-linear-gradient(top,#CDDF59 0,#B7C74E 100%);
+  background: -ms-linear-gradient(top,#CDDF59 0,#B7C74E 100%);
+  background: -o-linear-gradient(top,#CDDF59 0,#B7C74E 100%);
+  background: linear-gradient(top,#CDDF59 0,#B7C74E 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CDDF59, endColorstr=#B7C74E)";
+  border: 1px solid #b9c94f;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 .middle_content .description_section {
