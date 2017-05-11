@@ -44,7 +44,7 @@
         <div>
           <div class="clear"></div>
           <div class="question_header">Colour</div>
-          <%= f.association :category_colour, collection: CategoryColour.all, prompt: "select a category", label: false %>
+          <%= f.association :category_colour, collection: CategoryColour.all, prompt: "select a category", label: false, as: :check_boxes %>
         </div>
         <div><%= f.input :description, placeholder: "Designed for a slim fit to follow the contours of the body, choose your normal size. Take a look at our size guides for more information. Floral prints are an on-trend and feminine way to boost your outfit." %></div>
       </div>
