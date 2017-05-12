@@ -104,12 +104,13 @@
 
               <div class="listed_colours">
                 <ul>
-                  <% if @product.item_colurs.include?("Beige") %>
-                    <li class="beige"></li>
-                  <% end %>
                   <% if @product.item_colurs.include?("Blue") %>
                     <li class="blue"></li>
                   <% end %>
+                  <% if @product.item_colurs.include?("Beige") %>
+                    <li class="beige"></li>
+                  <% end %>
+                  
                   <% if @product.item_colurs.include?("Black") %>
                     <li class="black"></li>
                   <% end %>
@@ -159,7 +160,7 @@
                     <li class="yellow"></li>
                   <% end %>
                   <% if @product.item_colurs.include?("Multi")%>
-                    <li class="multi"></li>
+                    <li class="multi"><%# image_tag("img_clothe_01.jpg") %></li>
                   <% end %>
                   <% if @product.item_colurs.include?("Stone")%>
                     <li class="stone"></li>
