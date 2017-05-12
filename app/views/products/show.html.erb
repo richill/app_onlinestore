@@ -94,59 +94,74 @@
                 <% end %>
               </span>
               <div class="clear"></div> 
+
+              <% @product.category_colour do |colour| %>
+                <% if @product.item_colurs(colour) %>
+                  <%= colour.name %>
+                <% end %>
+              <% end %>
+
+
               <div class="listed_colours">
-                <%= @product.item_colurs %>
                 <ul>
                   <% if @product.item_colurs.include?("Beige") %>
                     <li class="beige"></li>
-                  <% elsif @product.item_colurs.include?("Green")%>
+                  <% end %>
+                  <% if @product.item_colurs.include?("Blue") %>
+                    <li class="blue"></li>
+                  <% end %>
+                  <% if @product.item_colurs.include?("Black") %>
+                    <li class="black"></li>
+                  <% end %>
+                  <% if @product.item_colurs.include?("Brown") %>
+                    <li class="brown"></li>
+                  <% end %>
+                  <% if @product.item_colurs.include?("Copper") %>
+                    <li class="copper"></li>
+                  <% end %>
+                  <% if @product.item_colurs.include?("Cream") %>
+                    <li class="cream"></li>
+                  <% end %>
+                  <% if @product.item_colurs.include?("Gold") %>
+                    <li class="gold"></li>
+                  <% end %>
+                  <% if @product.item_colurs.include?("Green")%>
                     <li class="green"></li>
-                  <% elsif @product.item_colurs.include?("Red")%>
+                  <% end %>
+                  <% if @product.item_colurs.include?("Grey")%>
+                    <li class="grey"></li>
+                  <% end %>
+                  <% if @product.item_colurs.include?("Navy")%>
+                    <li class="navy"></li>
+                  <% end %>
+                  <% if @product.item_colurs.include?("Orange")%>
+                    <li class="orange"></li>
+                  <% end %>
+                  <% if @product.item_colurs.include?("Pink")%>
+                    <li class="pink"></li>
+                  <% end %>
+                  <% if @product.item_colurs.include?("Purple")%>
+                    <li class="purple"></li>
+                  <% end %>
+                  <% if @product.item_colurs.include?("Red")%>
                     <li class="red"></li>
                   <% end %>
-                </ul>
-              </div>
-              <div class="listed_colours hide">
-                <ul>
-                  <% if @product.item_colurs.include?("Beige") %>
-                    <li class="beige"></li>
-                  <% elsif @product.item_colurs.include?("Blue")%>
-                    <li class="blue"></li>
-                  <% elsif @product.item_colurs.include?("Black")%>
-                    <li class="black"></li>
-                  <% elsif @product..item_colurs.include?("Brown")%>
-                    <li class="borwn"></li>
-                  <% elsif @product.item_colurs.include?("Copper")%>
-                    <li class="copper"></li>
-                  <% elsif @product.item_colurs.include?("Cream")%>
-                    <li class="cream"></li>
-                  <% elsif @product.item_colurs.include?("Gold")%>
-                    <li class="gold"></li>
-                  <% elsif @product.item_colurs.include?("Green")%>
-                    <li class="green"></li>
-                  <% elsif @product.item_colurs.include?("Grey")%>
-                    <li class="grey"></li>
-                  <% elsif @product.item_colurs.include?("Navy")%>
-                    <li class="navy"></li>
-                  <% elsif @product.item_colurs.include?("Orange")%>
-                    <li class="orange"></li>
-                  <% elsif @product.item_colurs.include?("Pink")%>
-                    <li class="pink"></li>
-                  <% elsif @product.item_colurs.include?("Purple")%>
-                    <li class="purple"></li>
-                  <% elsif @product.item_colurs.include?("Red")%>
-                    <li class="red"></li>
-                  <% elsif @product.item_colurs.include?("Silver")%>
+                  <% if @product.item_colurs.include?("Silver")%>
                     <li class="silver"></li>
-                  <% elsif @product..item_colurs.include?("Tan")%>
+                  <% end %>
+                  <% if @product.item_colurs.include?("Tan")%>
                     <li class="tan"></li>
-                  <% elsif @product.item_colurs.include?("White")%>
+                  <% end %>
+                  <% if @product.item_colurs.include?("White")%>
                     <li class="white"></li>
-                  <% elsif @product.item_colurs.include?("Yellow")%>
+                  <% end %>
+                  <% if @product.item_colurs.include?("Yellow")%>
                     <li class="yellow"></li>
-                  <% elsif @product.item_colurs.include?("Multi")%>
+                  <% end %>
+                  <% if @product.item_colurs.include?("Multi")%>
                     <li class="multi"></li>
-                  <% elsif @product.item_colurs.include?("Stone")%>
+                  <% end %>
+                  <% if @product.item_colurs.include?("Stone")%>
                     <li class="stone"></li>
                   <% end %>
                 </ul>

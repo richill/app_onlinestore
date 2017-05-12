@@ -25,6 +25,7 @@ class Product < ApplicationRecord
     end
     item_selected_colours
 
+
     # if current_user_preferred_relationshipstatus.include?(other_user_relationshipstatus) && other_user_preferred_relationshipstatus.include?(current_user_relationshipstatus)
     #   other_user
     # end
