@@ -1,4 +1,8 @@
 class Product < ApplicationRecord
+
+  extend FriendlyId
+  friendly_id :slug_products, use: :slugged
+
   belongs_to :category_accessorytype, dependent: :destroy
   belongs_to :category_bagtype, dependent: :destroy 
   belongs_to :category_brand, dependent: :destroy 
@@ -11,6 +15,12 @@ class Product < ApplicationRecord
   has_and_belongs_to_many :category_generalsize, dependent: :destroy
   has_and_belongs_to_many :category_shoesize, dependent: :destroy
   has_and_belongs_to_many :category_colour, dependent: :destroy
+
+  def slug_products
+    [
+      :title
+    ]
+  end
 
 
   def item_colurs
