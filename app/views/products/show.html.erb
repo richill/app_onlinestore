@@ -196,7 +196,10 @@
               <div><%= link_to "launch it", products_path, id:"overlaylaunch-inAbox" %></div>
               <a href="  ?o=1"></a>
 
-              <div class=""><%= link_to 'Book Now!', products_path(url_id: "hello") %></div>
+              <div class=""><%= link_to 'Book Now! - Ruby a_tag', products_path(url_id: "hello") %></div>
+              <div><a class="" href="/products?url_id=hello" class="btn">Book Now! - normal a_tag</a></div>
+
+
 
               <!-- working_content -->
 
@@ -209,19 +212,15 @@
 
             </div>
             <div class="clear"></div>
+
+
+
+            
             <div class="description_section">
               <div class="header"><i class="fa fa-caret-down" aria-hidden="true"></i> Description</div>
               <div class="description_content"><%= @product.description %></div>
                <div class="description_content"><%= @product.description %></div>
             </div>
-
-
-
-
-
-
-
-    
             <p class="hide">
               <strong>Description:</strong>
               <%= @product.description %>
