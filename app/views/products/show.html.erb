@@ -183,7 +183,6 @@
                 </span>
                 <span class="size_guide"><i class="fa fa-scissors" aria-hidden="true"></i> <%= link_to "Size guide" %></span>
                 <div class="clear"></div>
-         
               </div>
               <div class="clear"></div>
               <!-- <div class="save_item"><%# link_to "save item" %></div> -->
@@ -193,11 +192,12 @@
 
               <!-- working_content -->
 
-              <div><%= link_to "launch it", products_path, id:"overlaylaunch-inAbox" %></div>
-              <a href="  ?o=1"></a>
+              <!-- <div><%= link_to "launch it", products_path, id:"overlaylaunch-inAbox" %></div>
+              <a href="  ?o=1"></a> -->
 
-              <div class=""><%= link_to 'Book Now! - Ruby a_tag', products_path(url_id: "hello") %></div>
-              <div><a class="" href="/products?url_id=hello" class="btn">Book Now! - normal a_tag</a></div>
+              <div class="my_awesom_botton btn"><%= link_to 'Book Now! - Ruby a_tag', products_path(url_id: "hello") %></div>
+              <div><a class="my_awesom_botton btn" href="/products?url_id=hello" class="btn">Book Now! - Normal a_tag</a></div>
+
 
 
 
@@ -215,7 +215,7 @@
 
 
 
-            
+
             <div class="description_section">
               <div class="header"><i class="fa fa-caret-down" aria-hidden="true"></i> Description</div>
               <div class="description_content"><%= @product.description %></div>
