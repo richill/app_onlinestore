@@ -131,13 +131,11 @@ $(document).ready(function () {
     } 
   });
 
-
   $('#overlaylaunch-inAbox').click(function(e) {
     openOverlay('#overlay-inAbox');
     e.preventDefault();
   });
 
-  
   function getParameterByName(name, url) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");
@@ -151,25 +149,7 @@ $(document).ready(function () {
 
 
 
-// $(document).ready(function () {
-//   $(function() {
-//     var o = getParameterByName('url_id');
 
-//     if('hello' == o){
-//       $('.my_awesom_botton').trigger( "click" );
-//     }
-//   });
-
-//   function getParameterByName(name, url) {
-//     if (!url) url = window.location.href;
-//     name = name.replace(/[\[\]]/g, "\\$&");
-//     var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-//         results = regex.exec(url);
-//     if (!results) return null;
-//     if (!results[2]) return '';
-//     return decodeURIComponent(results[2].replace(/\+/g, " "));
-//   }
-// });
 
 
 
