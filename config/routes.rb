@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   resources :products do
     collection do
-      get   'jeans-and-denims',               to: 'products#clothes_jeans_and_denims'
+      get   'clothes/jeans-and-denims',               to: 'products#clothes_jeans_and_denims'
     end
   end
 
