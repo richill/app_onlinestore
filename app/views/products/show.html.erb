@@ -185,28 +185,15 @@
                 <div class="clear"></div>
               </div>
               <div class="clear"></div>
-              <!-- <div class="save_item"><%# link_to "save item" %></div> -->
-
-
-
-
-              <!-- working_content -->
-              <div class="btn"><%= link_to 'Book Now! - Ruby a_tag', products_path(url_id: "hello") %></div>
-              <div><a class="btn" href="/products?url_id=hello">Book Now! - Normal a_tag</a></div>
-              <!-- working_content -->
-
-
-
-
-
-
-
-
+              <div class="save_item"><%= link_to "save item" %></div>
+              <!-- working_content:modal_link -->
+              <div class="hide">
+                <div class="btn"><%= link_to 'Book Now! - Ruby a_tag', products_path(url_id: "hello") %></div>
+                <div><a class="btn" href="/products?url_id=hello">Book Now! - Normal a_tag</a></div>
+              </div>
+              <!-- working_content:modal_link -->
             </div>
             <div class="clear"></div>
-
-
-
 
             <div class="description_section">
               <div class="header"><i class="fa fa-caret-down" aria-hidden="true"></i> Description</div>
