@@ -7,6 +7,7 @@
     <div class="medium-12 columns">
       <!-- left_section -->
       <div class="medium-6 columns">
+        <div><%= f.file_field :image %></div>
         <div><%= f.input :title, placeholder: "Floral Print Ruffle Wrap Dress" %></div>
         <div><%= f.association :category_currency, collection: CategoryCurrency.all, prompt: "select a currency", label: "Currency" %></div>
         <div><%= f.input :price, placeholder: "39.50" %></div>
