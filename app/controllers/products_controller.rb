@@ -51,6 +51,10 @@ class ProductsController < ApplicationController
   end
 
   # --------------- products ---------------
+  def clothes_dresses
+    @products = Product.all
+  end
+
   def clothes_jeans_and_denims
     @products = Product.all
   end
