@@ -3,6 +3,8 @@ class Product < ApplicationRecord
   extend FriendlyId
   friendly_id :slug_products, use: :slugged
 
+  mount_uploader :image, ImageUploader
+
   belongs_to :category_accessorytype, dependent: :destroy
   belongs_to :category_bagtype, dependent: :destroy 
   belongs_to :category_brand, dependent: :destroy 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170515214751) do
+ActiveRecord::Schema.define(version: 20170520095924) do
 
   create_table "category_accessorytypes", force: :cascade do |t|
     t.string   "name"
@@ -133,6 +133,7 @@ ActiveRecord::Schema.define(version: 20170515214751) do
     t.boolean  "product_new"
     t.integer  "category_currency_id"
     t.string   "slug"
+    t.string   "image"
     t.index ["slug"], name: "index_products_on_slug", unique: true
   end
 
