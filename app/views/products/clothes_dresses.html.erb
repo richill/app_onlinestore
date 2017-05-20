@@ -1,1 +1,37 @@
 <h1>clothes_dresses</h1>
+<div class="medium-12 columns product_clothes_dresses_container">
+  <div class="medium-12 columns product_dresses_container">
+    <div class="product_dresses_inner_container">
+    
+      <!-- product_content -->
+      <div class="product_dresses_content">
+        <div class="tree_line">
+          <span><%= link_to "home", root_path %></span>
+          <span class="divider">/</span>
+          <span><%= link_to "women", "#" %></span>
+          <span class="divider">/</span>
+          <span><%# link_to @product.category_type.name, "#" %></span>
+          <span class="divider">/</span>
+          <span>
+            <%# if @product.category_type.name == "Clothes" %>
+              <%# @product.category_clothetype.name %>
+            <%# elsif @product.category_type.name == "Accessories" %>
+              <%# @product.category_accessorytype.name %>
+            <%# elsif @product.category_type.name == "Shoes" %>
+              <%# @product.category_shoetype.name %>
+            <%# elsif @product.category_type.name == "Bags & Purses" %>
+              <%# @product.category_bagtype.name %>
+            <%# elsif @product.category_type.name == "Gifts" %>
+            <%# end %>
+          </span>
+        </div>
+
+
+        <div>hello</div>
+      </div>
+      <!-- product_content -->
+      
+    </div>
+  </div>
+</div>
+<div class="clear"></div>
