@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
-  resources :products
+  resources :products do
+    collection do
+      get   'jeans-and-denims',               to: 'products#clothes_jeans_and_denims'
+    end
+  end
 
   devise_for :users, controllers: {registrations: 'users/registrations'}, defaults: { format: 'html' }
   # devise_for :users

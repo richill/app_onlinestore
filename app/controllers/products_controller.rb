@@ -50,6 +50,10 @@ class ProductsController < ApplicationController
     end
   end
 
+  def clothes_jeans_and_denims
+    @products = Product.all
+  end
+
   private
     def set_product
       @product = Product.friendly.find(params[:id])
