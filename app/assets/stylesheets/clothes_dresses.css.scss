@@ -114,7 +114,7 @@
 //     workings
 // ---------------------------
 
-.right_inner_column {
+.upper_row {
   padding: 0px !important;
   border-top: 3px solid #262626;
   border-bottom: 3px solid #262626;
@@ -162,10 +162,46 @@
   padding: 0px !important;
 }
 
+.middle_row_selection {
+  padding: 0px !important;
+  margin-top: 20px;
+  // margin-bottom: 5px;
+  // border-bottom: 2px solid #000;
+}
 
+.btn_link_section {
+  padding: 0px !important;
+}
 
+.middle_row_selection .btn {
+  text-align: center;
+  border: 1px solid #94B8dA;
+  display: inline-block;
+  width: 220px;
+  height: 35px;
+  padding: 8px 0px;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #000 !important;
+  font-weight: 300;
+}
 
+.middle_row_selection .btn:hover {
+  text-decoration: underline;
+}
 
+.second_btn {
+  width: 223px !important;
+}
+
+.third_btn {
+  float: right;
+  width: 223px !important;
+}
+
+.fourth_btn {
+  float: right;
+}
 
 
 
