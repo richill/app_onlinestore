@@ -97,6 +97,7 @@
 .product_clothes_dresses_container .right_column {
   // background-color: #fff;
   background-color: green;
+  padding: 0px !important;
 }
 
 
@@ -113,6 +114,10 @@
 //     workings
 // ---------------------------
 
+.right_inner_column {
+  padding: 0px !important;
+}
+
 .upper_left_section {
   background-color: green;
 }
@@ -126,11 +131,17 @@
 }
 
 
+.upper_left_section {
+  padding: 0px !important;
+}
 
+.upper_middle_section{
+  padding: 0px !important;
+}
 
-
-
-
+.upper_right_section {
+  padding: 0px !important;
+}
 
 
 
