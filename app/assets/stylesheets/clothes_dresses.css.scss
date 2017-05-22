@@ -59,7 +59,7 @@
 
 .product_clothes_dresses_container .left_column {
   // background-color: #fff;
-  background-color: red;
+  background-color: #fff;
 }
 
 .product_clothes_dresses_container .left_column ul li {
@@ -95,8 +95,8 @@
 // --------- right_column ---------
 
 .product_clothes_dresses_container .right_column {
-  // background-color: #fff;
-  background-color: green;
+  background-color: #fff;
+  // background-color: green;
   padding: 0px !important;
 }
 
@@ -116,18 +116,20 @@
 
 .right_inner_column {
   padding: 0px !important;
+  border-top: 3px solid #262626;
+  border-bottom: 3px solid #262626;
 }
 
 .upper_left_section {
-  background-color: green;
+  background-color: #fff;
 }
 
 .upper_middle_section {
-  background-color: orange;
+  background-color: #fff;
 }
 
 .upper_right_section {
-  background-color: green;
+  background-color: #fff;
 }
 
 
@@ -137,6 +139,23 @@
 
 .upper_middle_section{
   padding: 0px !important;
+  text-align: center;
+}
+
+.upper_inner_middle_section {
+  width: 400px;
+  margin: auto;
+  padding: 51px 0px;
+}
+
+.upper_middle_section .header {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.upper_middle_section .content {
+  font-size: 16px;
 }
 
 .upper_right_section {
