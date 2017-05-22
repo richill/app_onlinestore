@@ -10,16 +10,18 @@
           <span class="divider">/</span>
           <span>
             <% if @product.category_type.name == "Clothes" %>
-              <%= @product.category_clothetype.name %>
+              <%= link_to @product.category_clothetype.name, clothes_dresses_products_path %>
             <% elsif @product.category_type.name == "Accessories" %>
-              <%= @product.category_accessorytype.name %>
+              <%= link_to @product.category_accessorytype.name, "#" %>
             <% elsif @product.category_type.name == "Shoes" %>
-              <%= @product.category_shoetype.name %>
+              <%= link_to @product.category_shoetype.name, "#" %>
             <% elsif @product.category_type.name == "Bags & Purses" %>
-              <%= @product.category_bagtype.name %>
+              <%= link_to @product.category_bagtype.name, "#" %>
             <% elsif @product.category_type.name == "Gifts" %>
             <% end %>
           </span>
+          <span class="divider">/</span>
+          <span><%= @product.title %></span>
         </div>
         <div class="product_show_details">
           <div class="medium-3 columns left_content">

@@ -165,8 +165,7 @@
 .middle_row_selection {
   padding: 0px !important;
   margin-top: 20px;
-  // margin-bottom: 5px;
-  // border-bottom: 2px solid #000;
+  border-bottom: 2px solid #eee
 }
 
 .middle_row_selection .btn_link_section {
@@ -184,6 +183,7 @@
   text-transform: uppercase;
   color: #000 !important;
   font-weight: 300;
+  margin-bottom: 10px;
 }
 
 .middle_row_selection .btn:hover {

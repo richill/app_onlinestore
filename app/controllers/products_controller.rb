@@ -52,7 +52,7 @@ class ProductsController < ApplicationController
 
   # --------------- products ---------------
   def clothes_dresses
-    @products = Product.all
+    @dresses = Product.all
   end
 
   def clothes_jeans_and_denims

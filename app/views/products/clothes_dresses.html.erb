@@ -119,6 +119,11 @@
               <%= link_to "evening dresses", "#", class: "btn fourth_btn" %>
             </div>
           </div>
+          <div class="medium-12 columns bottom_row_clothes">
+            <% @dresses.each do |dress| %>
+              <%= link_to(image_tag(dress.image_url), dress) %>
+            <% end %>
+          </div>
         </div>
 
       </div>
