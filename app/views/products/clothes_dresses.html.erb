@@ -120,9 +120,11 @@
             </div>
           </div>
           <div class="medium-12 columns bottom_row_clothes">
+            <ul>
             <% @dresses.each do |dress| %>
-              <%= link_to(image_tag(dress.image_url), dress) %>
+              <li><%= link_to(image_tag(dress.image_url), dress) %></li> 
             <% end %>
+            </ul>
           </div>
         </div>
 

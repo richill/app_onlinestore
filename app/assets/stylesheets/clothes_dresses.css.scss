@@ -203,16 +203,39 @@
   float: right;
 }
 
-
 .bottom_row_clothes {
   margin-top: 15px;
+  padding: 0px !important;
 }
 
 
+.bottom_row_clothes ul {
+  list-style-type: none;
+  margin: 0px !important;
+  display: inline-block;
+}
 
+.bottom_row_clothes ul li {
+  float: left;
+  width: 294px;
+  margin: 0px 3px;
+  height: 382px !important;
+}
 
+.bottom_row_clothes ul img {
+  width: 294px;
+  height: 382px !important;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
 
-
+.bottom_row_clothes ul img:hover {
+  opacity: 0.5 !important;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
 
 
 
