@@ -63,8 +63,13 @@
   padding: 0px !important;
 }
 
+.left_content .image_container {
+  height: 397px;
+}
+
 .left_content img {
-  height: 100% !important;
+  // height: 100% !important;
+  height: 397px;
 }
 
 // --- middle_content ---
