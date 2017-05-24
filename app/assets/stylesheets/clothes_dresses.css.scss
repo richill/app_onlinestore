@@ -237,6 +237,32 @@
   -o-transition: all 0.3s ease;
 }
 
+.dress_details {
+  text-align: center;
+  margin: 15px 0px;
+}
+
+.dress_brand {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #666 !important;
+  font-weight: bold;
+}
+
+.dress_name {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #262626 !important;
+  margin: 2px 0px;
+}
+
+.dress_price {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #262626 !important;
+  font-weight: bold;
+}
+
 
 
 

@@ -122,7 +122,27 @@
           <div class="medium-12 columns bottom_row_clothes">
             <ul>
             <% @dresses.each do |dress| %>
-              <li><%= link_to(image_tag(dress.image_url), dress) %></li> 
+              <li>
+                <div class="dress_img"><%= link_to(image_tag(dress.image_url), dress) %></div>
+                <div class="dress_details">
+                  <%= link_to dress do %>
+                    <div class="dress_brand">firstchoice collection</div>
+                    <div class="dress_name"><%= dress.title %></div>
+                    <div class="dress_price">
+                      <span class="currency">
+                        <% if dress.category_currency.name == "Cedis" %>
+                          <%= "¢" %>
+                        <% elsif dress.category_currency.name == "Dollars" %>
+                          <%= "$" %>
+                        <% elsif dress.category_currency.name == "Pounds" %>
+                          <%= "£" %>
+                        <% end %>
+                      </span>
+                      <span><%= number_with_precision("#{dress.price}", precision: 2) %></span>
+                    </div>
+                  <% end %>
+                </div>  
+              </li> 
             <% end %>
             </ul>
           </div>
