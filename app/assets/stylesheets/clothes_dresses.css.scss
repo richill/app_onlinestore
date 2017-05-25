@@ -208,7 +208,6 @@
   padding: 0px !important;
 }
 
-
 .bottom_row_clothes ul {
   list-style-type: none;
   margin: 0px !important;
@@ -237,9 +236,24 @@
   -o-transition: all 0.3s ease;
 }
 
+.dress_img {
+  position: relative;
+  position: relative;
+  height: 382px;
+}
+
+.new_item a {
+  position: absolute;
+}
+
+.img_item {
+  position: absolute;
+}
+
 .dress_details {
   text-align: center;
   margin: 15px 0px;
+  position: none !important;
 }
 
 .dress_brand {
