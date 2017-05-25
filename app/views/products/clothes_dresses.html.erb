@@ -148,7 +148,13 @@
                           <%= "£" %>
                         <% end %>
                       </span>
-                      <span><%= number_with_precision("#{dress.price}", precision: 2) %></span>
+                      <span>
+                        <% if dress.sale? %>
+                          <%= number_with_precision("#{dress.saleprice}", precision: 2) %>
+                        <% else %>
+                          <%= number_with_precision("#{dress.price}", precision: 2) %>
+                        <% end %>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -172,7 +178,6 @@
                             </span>
                             <span class="price_sale"><%= number_with_precision("#{dress.price}", precision: 2) %></span>
                           </span>
-
                           <span class="price_currency sale_item">
                             <span class="now_text">now</span>
                             <span class="currency">
@@ -200,32 +205,6 @@
                             <span><%= number_with_precision("#{dress.price}", precision: 2) %></span>
                           </div>
                         <% end %>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        
                       </span>
                     </div>
                   <% end %>
