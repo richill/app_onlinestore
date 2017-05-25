@@ -242,12 +242,41 @@
   height: 382px;
 }
 
-.new_item a {
+.new_item {
   position: absolute;
 }
 
+.new_item {
+  font-size: 12px;
+  letter-spacing: 1px;
+  background-color: black;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  padding: 3px;
+  border-radius: 200px;
+}
+
+
+.new_item_inner {
+  background-color: black;
+  height: 44px;
+  width: 44px;
+  text-align: center;
+  padding: 11px 0px;
+  border-radius: 200px;
+  border: 1px solid #fff;
+}
+
+
+
 .img_item {
   position: absolute;
+}
+
+.img_dress_details {
+  text-align: center;
 }
 
 .dress_details {

@@ -125,6 +125,9 @@
               <li>
                 <div class="dress_img">
                   <div class="img_item"><%= link_to(image_tag(dress.image_url), dress) %></div>
+                  <div class="new_item">
+                    <div class="new_item_inner">new</div>
+                  </div>
                   <div class="img_dress_details">
                     <div class="dress_brand">firstchoice collection</div>
                     <div class="dress_name"><%= dress.title %></div>
@@ -141,7 +144,6 @@
                       <span><%= number_with_precision("#{dress.price}", precision: 2) %></span>
                     </div>
                   </div>
-                  <div class="new_item">new</div>
                 </div>
                 <div class="clear"></div>
                 <div class="dress_details">
