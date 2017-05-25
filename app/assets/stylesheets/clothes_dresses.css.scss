@@ -217,8 +217,7 @@
 .bottom_row_clothes ul li {
   float: left;
   width: 294px;
-  margin: 0px 3px;
-  height: 382px !important;
+  margin: 0px 3px 15px;
 }
 
 .bottom_row_clothes ul img {
@@ -268,6 +267,69 @@
   border-radius: 200px;
   border: 1px solid #fff;
 }
+
+
+
+
+
+
+
+.sale_clothe_item {
+  position: absolute;
+}
+
+.sale_clothe_item {
+  font-size: 12px;
+  letter-spacing: 1px;
+  background-color: #E34B51;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  padding: 3px;
+  border-radius: 200px;
+  margin: 10px;
+}
+
+.sale_clothe_item_inner {
+  background-color: #E34B51;
+  height: 44px;
+  width: 44px;
+  text-align: center;
+  padding: 11px 0px;
+  border-radius: 200px;
+  border: 1px solid #fff;
+}
+
+.dress_price .now_text {
+  margin-left: 10px;
+  font-size: 11px;
+  color: #E34B51;
+  word-spacing: 1px;
+  text-transform: lowercase !important;
+}
+
+
+.dress_price .price_sale {
+  text-decoration: line-through;
+}
+
+.dress_price .sale_item .price, .sale_item .currency {
+  color: #E34B51 !important;
+}
+
+.sale_price {
+  color: #E34B51 !important;
+}
+
+
+
+
+
+
+
+
+
 
 .img_item {
   position: absolute;

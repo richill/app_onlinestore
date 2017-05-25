@@ -39,47 +39,47 @@
             </div>
             <div class="item_ref">T422228</div>
             <div class="price_review_section">
-            <% if @product.sale? %>
-              <span class="price_currency">
-                <span class="currency">
-                  <% if @product.category_currency.name == "Cedis" %>
-                    <%= "¢" %>
-                  <% elsif @product.category_currency.name == "Dollars" %>
-                    <%= "$" %>
-                  <% elsif @product.category_currency.name == "Pounds" %>
-                    <%= "£" %>
-                  <% end %>
+              <% if @product.sale? %>
+                <span class="price_currency">
+                  <span class="currency">
+                    <% if @product.category_currency.name == "Cedis" %>
+                      <%= "¢" %>
+                    <% elsif @product.category_currency.name == "Dollars" %>
+                      <%= "$" %>
+                    <% elsif @product.category_currency.name == "Pounds" %>
+                      <%= "£" %>
+                    <% end %>
+                  </span>
+                  <span class="price_sale"><%= number_with_precision("#{@product.price}", precision: 2) %></span>
                 </span>
-                <span class="price_sale"><%= number_with_precision("#{@product.price}", precision: 2) %></span>
-              </span>
 
-              <span class="price_currency sale_item">
-                <span class="now_text">now</span>
-                <span class="currency">
-                  <% if @product.category_currency.name == "Cedis" %>
-                    <%= "¢" %>
-                  <% elsif @product.category_currency.name == "Dollars" %>
-                    <%= "$" %>
-                  <% elsif @product.category_currency.name == "Pounds" %>
-                    <%= "£" %>
-                  <% end %>
+                <span class="price_currency sale_item">
+                  <span class="now_text">now</span>
+                  <span class="currency">
+                    <% if @product.category_currency.name == "Cedis" %>
+                      <%= "¢" %>
+                    <% elsif @product.category_currency.name == "Dollars" %>
+                      <%= "$" %>
+                    <% elsif @product.category_currency.name == "Pounds" %>
+                      <%= "£" %>
+                    <% end %>
+                  </span>
+                  <span class="price"><%= number_with_precision("#{@product.saleprice}", precision: 2) %></span>
                 </span>
-                <span class="price"><%= number_with_precision("#{@product.saleprice}", precision: 2) %></span>
-              </span>
-            <% else %>
-              <div class="price_currency">
-                <span class="currency">
-                  <% if @product.category_currency.name == "Cedis" %>
-                    <%= "¢" %>
-                  <% elsif @product.category_currency.name == "Dollars" %>
-                    <%= "$" %>
-                  <% elsif @product.category_currency.name == "Pounds" %>
-                    <%= "£" %>
-                  <% end %>
-                </span>
-                <span class="price"><%= number_with_precision("#{@product.price}", precision: 2) %></span>
-              </div>
-            <% end %>
+              <% else %>
+                <div class="price_currency">
+                  <span class="currency">
+                    <% if @product.category_currency.name == "Cedis" %>
+                      <%= "¢" %>
+                    <% elsif @product.category_currency.name == "Dollars" %>
+                      <%= "$" %>
+                    <% elsif @product.category_currency.name == "Pounds" %>
+                      <%= "£" %>
+                    <% end %>
+                  </span>
+                  <span class="price"><%= number_with_precision("#{@product.price}", precision: 2) %></span>
+                </div>
+              <% end %>
             </div>
 
             <div class="minor_info">

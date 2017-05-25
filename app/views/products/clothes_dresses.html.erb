@@ -130,6 +130,11 @@
                       <div class="new_item_inner">new</div>
                     </div>
                   <% end %>
+                  <% if dress.sale? %>
+                    <div class="sale_clothe_item">
+                      <div class="sale_clothe_item_inner">sale</div>
+                    </div>
+                  <% end %>
                   <div class="img_dress_details">
                     <div class="dress_brand">firstchoice collection</div>
                     <div class="dress_name"><%= dress.title %></div>
@@ -154,15 +159,74 @@
                     <div class="dress_name"><%= dress.title %></div>
                     <div class="dress_price">
                       <span class="currency">
-                        <% if dress.category_currency.name == "Cedis" %>
-                          <%= "¢" %>
-                        <% elsif dress.category_currency.name == "Dollars" %>
-                          <%= "$" %>
-                        <% elsif dress.category_currency.name == "Pounds" %>
-                          <%= "£" %>
+                        <% if dress.sale? %>
+                          <span class="price_currency">
+                            <span class="currency">
+                              <% if dress.category_currency.name == "Cedis" %>
+                                <%= "¢" %>
+                              <% elsif dress.category_currency.name == "Dollars" %>
+                                <%= "$" %>
+                              <% elsif dress.category_currency.name == "Pounds" %>
+                                <%= "£" %>
+                              <% end %>
+                            </span>
+                            <span class="price_sale"><%= number_with_precision("#{dress.price}", precision: 2) %></span>
+                          </span>
+
+                          <span class="price_currency sale_item">
+                            <span class="now_text">now</span>
+                            <span class="currency">
+                              <% if dress.category_currency.name == "Cedis" %>
+                                <%= "¢" %>
+                              <% elsif dress.category_currency.name == "Dollars" %>
+                                <%= "$" %>
+                              <% elsif dress.category_currency.name == "Pounds" %>
+                                <%= "£" %>
+                              <% end %>
+                            </span>
+                            <span class="sale_price"><%= number_with_precision("#{dress.saleprice}", precision: 2) %></span>
+                          </span>
+                        <% else %>
+                          <div class="price_currency">
+                            <span class="currency">
+                              <% if dress.category_currency.name == "Cedis" %>
+                                <%= "¢" %>
+                              <% elsif dress.category_currency.name == "Dollars" %>
+                                <%= "$" %>
+                              <% elsif dress.category_currency.name == "Pounds" %>
+                                <%= "£" %>
+                              <% end %>
+                            </span>
+                            <span><%= number_with_precision("#{dress.price}", precision: 2) %></span>
+                          </div>
                         <% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        
                       </span>
-                      <span><%= number_with_precision("#{dress.price}", precision: 2) %></span>
                     </div>
                   <% end %>
                 </div>  
