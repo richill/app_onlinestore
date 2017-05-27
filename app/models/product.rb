@@ -24,24 +24,15 @@ class Product < ApplicationRecord
     ]
   end
 
+  scope :sales, -> {where(sale: true)}
+  #products on sale
 
   def item_colurs
-    #category_matchstatus [multiple]
-
-
-    #current_user preferred relationship status
     item_selected_colours = Array.new
     selected_colours = self.category_colour
     selected_colours.each do |colour|
       item_selected_colours << colour.name
     end
     item_selected_colours
-
-
-    # if current_user_preferred_relationshipstatus.include?(other_user_relationshipstatus) && other_user_preferred_relationshipstatus.include?(current_user_relationshipstatus)
-    #   other_user
-    # end
   end
-
-
 end
