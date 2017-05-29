@@ -6,7 +6,19 @@
         <div class="tree_line">
           <span><%= link_to "home", root_path %></span>
           <span class="divider">/</span>
-          <span><%= link_to @product.category_type.name, "#" %></span>
+          <span>
+            <% if @product.category_type.name == "Clothes" %>
+              <%= link_to @product.category_type.name, clothes_products_path %>
+            <% elsif @product.category_type.name == "Accessories" %>
+              <%= link_to @product.category_type.name, "#" %>
+            <% elsif @product.category_type.name == "Shoes" %>
+              <%= link_to @product.category_type.name, "#" %>
+            <% elsif @product.category_type.name == "Bags & Purses" %>
+              <%= link_to @product.category_type.name, bags_products_path %>
+            <% elsif @product.category_type.name == "Gifts" %>
+            <% end %>
+          </span>
+
           <span class="divider">/</span>
           <span>
             <% if @product.category_type.name == "Clothes" %>
@@ -16,7 +28,7 @@
             <% elsif @product.category_type.name == "Shoes" %>
               <%= link_to @product.category_shoetype.name, "#" %>
             <% elsif @product.category_type.name == "Bags & Purses" %>
-              <%= link_to @product.category_bagtype.name, "#" %>
+              <%= link_to @product.category_bagtype.name, bags_shoulder_bags_products_path %>
             <% elsif @product.category_type.name == "Gifts" %>
             <% end %>
           </span>
