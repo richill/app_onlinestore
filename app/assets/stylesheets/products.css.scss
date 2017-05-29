@@ -3,11 +3,11 @@
     File: products / colthes_dresses.html.erb
   =========================================*/
 
-.product_clothes_dresses_container {
+.product_container {
   padding: 0px !important;
 }
 
-.product_clothes_dresses_container .product_dresses_container {
+.product_container .product_item_container {
   font-weight: 400;
   color: #262626;
   background-color: #fff;
@@ -15,7 +15,7 @@
   border-bottom: 5px solid #262626;
 }
 
-.product_clothes_dresses_container .product_dresses_container .product_dresses_inner_container {
+.product_container .product_item_container .product_item_inner_container {
   width: 1200px;
   margin: auto;
   background-color: #fff;
@@ -24,7 +24,7 @@
 
 
 // ----- product_content -----
-.product_clothes_dresses_container .tree_line {
+.product_container .tree_line {
   font-size: 10px;
   font-weight: bold;
   color: #262626;
@@ -33,7 +33,7 @@
   letter-spacing: 1px;
 }
 
-.product_clothes_dresses_container .tree_line a {
+.product_container .tree_line a {
   font-size: 10px;
   font-weight: bold;
   color: #262626 !important;
@@ -41,15 +41,15 @@
   letter-spacing: 1px;
 }
 
-.product_clothes_dresses_container .tree_line a:hover {
+.product_container .tree_line a:hover {
   text-decoration: underline;
 }
 
-.product_clothes_dresses_container .tree_line .divider {
+.product_container .tree_line .divider {
   margin: 0px 5px;
 }
 
-.product_clothes_dresses_container .product_show_details {
+.product_container .product_show_details {
   padding: 20px 0px;
 }
 
@@ -57,35 +57,35 @@
 
 // --------- left_column ---------
 
-.product_clothes_dresses_container .left_column {
+.product_container .left_column {
   // background-color: #fff;
   background-color: #fff;
 }
 
-.product_clothes_dresses_container .left_column ul li {
+.product_container .left_column ul li {
   list-style-type: none;
   color: #262626;
   margin: 5px 0px;
 }
 
-.product_clothes_dresses_container .left_column ul li a {
+.product_container .left_column ul li a {
   font-size: 13px;
   text-transform: capitalize;
   color: #262626 !important;
 }
 
-.product_clothes_dresses_container .left_column ul li a:hover {
+.product_container .left_column ul li a:hover {
   text-decoration: underline !important;
 }
 
-.product_clothes_dresses_container .left_column ul .header {
+.product_container .left_column ul .header {
   font-size: 14px;
   text-transform: capitalize;
   font-weight: bold;
   margin-top: 25px;
 }
 
-.product_clothes_dresses_container .left_column ul .divider {
+.product_container .left_column ul .divider {
   border-bottom: 1px solid #f6f6f6;
   margin: 10px 0px;
 }
@@ -94,48 +94,48 @@
 
 // --------- right_column ---------
 
-.product_clothes_dresses_container .right_column {
+.product_container .right_column {
   background-color: #fff;
   // background-color: green;
   padding: 0px !important;
 }
 
-.product_clothes_dresses_container .right_column .upper_row {
+.product_container .right_column .upper_row {
   padding: 0px !important;
   border-top: 3px solid #262626;
   border-bottom: 3px solid #262626;
 }
 
-.product_clothes_dresses_container .right_column .upper_row .upper_left_section {
+.product_container .right_column .upper_row .upper_left_section {
   background-color: #fff;
 }
 
-.product_clothes_dresses_container .right_column .upper_row .upper_middle_section {
+.product_container .right_column .upper_row .upper_middle_section {
   background-color: #fff;
 }
 
-.product_clothes_dresses_container .right_column .upper_row .upper_right_section {
+.product_container .right_column .upper_row .upper_right_section {
   background-color: #fff;
 }
 
 
-.product_clothes_dresses_container .right_column .upper_row .upper_left_section {
+.product_container .right_column .upper_row .upper_left_section {
   padding: 0px !important;
 }
 
-.product_clothes_dresses_container .right_column .upper_row .upper_middle_section {
+.product_container .right_column .upper_row .upper_middle_section {
   padding: 0px !important;
   text-align: center;
 }
 
-.product_clothes_dresses_container .right_column .upper_row .upper_inner_middle_section {
+.product_container .right_column .upper_row .upper_inner_middle_section {
   width: 400px;
   margin: auto;
   padding: 51px 0px 0px;
   height: 225px;
 }
 
-.product_clothes_dresses_container .right_column .upper_row .upper_middle_section .header {
+.product_container .right_column .upper_row .upper_middle_section .header {
   text-transform: capitalize;
   font-weight: bold;
   font-size: 30px;
@@ -143,25 +143,25 @@
   margin-bottom: 5px;
 }
 
-.product_clothes_dresses_container .right_column .upper_row .upper_middle_section .content {
+.product_container .right_column .upper_row .upper_middle_section .content {
   font-size: 16px;
 }
 
-.product_clothes_dresses_container .right_column .upper_row .upper_right_section {
+.product_container .right_column .upper_row .upper_right_section {
   padding: 0px !important;
 }
 
-.product_clothes_dresses_container .right_column .middle_row_selection {
+.product_container .right_column .middle_row_selection {
   padding: 0px !important;
   margin-top: 20px;
   border-bottom: 2px solid #eee
 }
 
-.product_clothes_dresses_container .right_column .middle_row_selection .btn_link_section {
+.product_container .right_column .middle_row_selection .btn_link_section {
   padding: 0px !important;
 }
 
-.product_clothes_dresses_container .right_column .middle_row_selection .btn {
+.product_container .right_column .middle_row_selection .btn {
   text-align: center;
   border: 1px solid #94B8dA;
   display: inline-block;
@@ -175,41 +175,41 @@
   margin-bottom: 15px;
 }
 
-.product_clothes_dresses_container .right_column .middle_row_selection .btn:hover {
+.product_container .right_column .middle_row_selection .btn:hover {
   text-decoration: underline;
 }
 
-.product_clothes_dresses_container .right_column .middle_row_selection .second_btn {
+.product_container .right_column .middle_row_selection .second_btn {
   width: 223px !important;
 }
 
-.product_clothes_dresses_container .right_column .middle_row_selection .third_btn {
+.product_container .right_column .middle_row_selection .third_btn {
   float: right;
   width: 223px !important;
 }
 
-.product_clothes_dresses_container .right_column .middle_row_selection .fourth_btn {
+.product_container .right_column .middle_row_selection .fourth_btn {
   float: right;
 }
 
-.product_clothes_dresses_container .right_column .bottom_row_clothes {
+.product_container .right_column .bottom_row_clothes {
   margin-top: 15px;
   padding: 0px !important;
 }
 
-.product_clothes_dresses_container .right_column .bottom_row_clothes ul {
+.product_container .right_column .bottom_row_clothes ul {
   list-style-type: none;
   margin: 0px !important;
   display: inline-block;
 }
 
-.product_clothes_dresses_container .right_column .bottom_row_clothes ul li {
+.product_container .right_column .bottom_row_clothes ul li {
   float: left;
   width: 294px;
   margin: 0px 3px 15px;
 }
 
-.product_clothes_dresses_container .right_column .bottom_row_clothes ul img {
+.product_container .right_column .bottom_row_clothes ul img {
   width: 294px;
   height: 382px !important;
   -webkit-transition: all 0.3s ease;
@@ -217,24 +217,24 @@
   -o-transition: all 0.3s ease;
 }
 
-.product_clothes_dresses_container .right_column .bottom_row_clothes ul img:hover {
+.product_container .right_column .bottom_row_clothes ul img:hover {
   opacity: 0.5 !important;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
 }
 
-.product_clothes_dresses_container .right_column .bottom_row_clothes .dress_img {
+.product_container .right_column .bottom_row_clothes .dress_img {
   position: relative;
   position: relative;
   height: 382px;
 }
 
-.product_clothes_dresses_container .right_column .bottom_row_clothes .new_item {
+.product_container .right_column .bottom_row_clothes .new_item {
   position: absolute;
 }
 
-.product_clothes_dresses_container .right_column .bottom_row_clothes .new_item {
+.product_container .right_column .bottom_row_clothes .new_item {
   font-size: 12px;
   letter-spacing: 1px;
   background-color: black;
@@ -247,7 +247,7 @@
   margin: 10px;
 }
 
-.product_clothes_dresses_container .right_column .bottom_row_clothes .new_item_inner {
+.product_container .right_column .bottom_row_clothes .new_item_inner {
   background-color: black;
   height: 44px;
   width: 44px;
@@ -257,11 +257,11 @@
   border: 1px solid #fff;
 }
 
-.product_clothes_dresses_container .right_column .bottom_row_clothes .sale_clothe_item {
+.product_container .right_column .bottom_row_clothes .sale_clothe_item {
   position: absolute;
 }
 
-.product_clothes_dresses_container .right_column .bottom_row_clothes .sale_clothe_item {
+.product_container .right_column .bottom_row_clothes .sale_clothe_item {
   font-size: 12px;
   letter-spacing: 1px;
   background-color: #E34B51;
@@ -274,7 +274,7 @@
   margin: 10px;
 }
 
-.product_clothes_dresses_container .right_column .bottom_row_clothes .sale_clothe_item_inner {
+.product_container .right_column .bottom_row_clothes .sale_clothe_item_inner {
   background-color: #E34B51;
   height: 44px;
   width: 44px;
@@ -284,7 +284,7 @@
   border: 1px solid #fff;
 }
 
-.product_clothes_dresses_container .right_column .bottom_row_clothes .dress_price .now_text {
+.product_container .right_column .bottom_row_clothes .dress_price .now_text {
   margin-left: 10px;
   font-size: 11px;
   color: #E34B51;
@@ -292,41 +292,41 @@
   text-transform: lowercase !important;
 }
 
-.product_clothes_dresses_container .right_column .bottom_row_clothes .dress_price .price_sale {
+.product_container .right_column .bottom_row_clothes .dress_price .price_sale {
   text-decoration: line-through;
 }
 
-.product_clothes_dresses_container .right_column .bottom_row_clothes .dress_price .sale_item .price, .sale_item .currency {
+.product_container .right_column .bottom_row_clothes .dress_price .sale_item .price, .sale_item .currency {
   color: #E34B51 !important;
 }
 
-.product_clothes_dresses_container .right_column .bottom_row_clothes .sale_price {
+.product_container .right_column .bottom_row_clothes .sale_price {
   color: #E34B51 !important;
 }
 
-.product_clothes_dresses_container .right_column .bottom_row_clothes .img_item {
+.product_container .right_column .bottom_row_clothes .img_item {
   position: absolute;
 }
 
-.product_clothes_dresses_container .right_column .bottom_row_clothes .img_dress_details {
+.product_container .right_column .bottom_row_clothes .img_dress_details {
   text-align: center;
   padding: 135px 0px;
 }
 
-.product_clothes_dresses_container .right_column .bottom_row_clothes .dress_details {
+.product_container .right_column .bottom_row_clothes .dress_details {
   text-align: center;
   margin: 15px 0px;
   position: none !important;
 }
 
-.product_clothes_dresses_container .right_column .bottom_row_clothes .dress_brand {
+.product_container .right_column .bottom_row_clothes .dress_brand {
   font-size: 11px;
   text-transform: uppercase;
   color: #666 !important;
   font-weight: bold;
 }
 
-.product_clothes_dresses_container .right_column .bottom_row_clothes .dress_name {
+.product_container .right_column .bottom_row_clothes .dress_name {
   font-size: 13px;
   text-transform: capitalize;
   color: #262626 !important;
@@ -334,7 +334,7 @@
   font-weight: 300;
 }
 
-.product_clothes_dresses_container .right_column .bottom_row_clothes .dress_price {
+.product_container .right_column .bottom_row_clothes .dress_price {
   font-size: 14px;
   text-transform: capitalize;
   color: #262626 !important;

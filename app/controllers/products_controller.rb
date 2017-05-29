@@ -73,7 +73,7 @@ class ProductsController < ApplicationController
   end
 
   def sales
-    @products = Product.all
+    @products = Product.sales
   end
   # --------------- products ---------------
 
