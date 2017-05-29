@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     collection do 
       get 'clothes/dresses',               to: 'products#clothes_dresses'
       get 'clothes/jeans-and-denims',      to: 'products#clothes_jeans_and_denims'
+      get 'bags/shoulder-bags',            to: 'products#bags_shoulder_bags'
       get 'sales'
     end
   end
