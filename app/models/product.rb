@@ -58,7 +58,7 @@ class Product < ApplicationRecord
   scope :bags_bum, ->() { joins(:category_bagtype).where('category_bagtypes.name' => "Bum Bags") }
   scope :bags_backpacks, ->() { joins(:category_bagtype).where('category_bagtypes.name' => "Backpacks") }
   scope :bags_clutches, ->() { joins(:category_bagtype).where('category_bagtypes.name' => "Clutches") }
-  scope :bags_coin_purses ->() { joins(:category_bagtype).where('category_bagtypes.name' => "Coin Purses") }
+  scope :bags_coin_purses, ->() { joins(:category_bagtype).where('category_bagtypes.name' => "Coin Purses") }
   scope :bags_folder_purses, ->() { joins(:category_bagtype).where('category_bagtypes.name' => "Folder Over Purses") }
   scope :bags_gym, ->() { joins(:category_bagtype).where('category_bagtypes.name' => "Gym Bags") }
   scope :bags_holdalls, ->() { joins(:category_bagtype).where('category_bagtypes.name' => "Holdalls") }
