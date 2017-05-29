@@ -7,9 +7,7 @@
         <div class="tree_line">
           <span><%= link_to "home", root_path %></span>
           <span class="divider">/</span>
-          <span><%= link_to "clothes", "#" %></span>
-          <span class="divider">/</span>
-          <span>dresses</span>
+          <span>clothes</span>
         </div>
 
         <!-- left_column -->
@@ -95,6 +93,30 @@
         </div>
         <!-- right_column -->
         <div class="medium-9 columns right_column">
+          <div class="medium-12 columns upper_row">
+            <div class="medium-3 columns upper_left_section"><%= image_tag("img_clothes_dresses_01.png") %></div>
+            <div class="medium-6 columns upper_middle_section">
+              <div class="upper_inner_middle_section">
+                <div class="header">clothes</div>
+                <div class="content">Clothe for the day you want to have. Sleek shirt dresses that mean business, flirty maxis for carefree afternoons – wear one, wear them all</div>
+              </div>
+            </div>
+            <div class="medium-3 columns upper_right_section"><%= image_tag("img_clothes_dresses_02.png") %></div>
+          </div>
+          <div class="medium-12 columns middle_row_selection">
+            <div class="medium-3 columns btn_link_section"> 
+              <%= link_to "casual dresses", "#", class: "btn first_btn" %>
+            </div>
+            <div class="medium-3 columns btn_link_section">
+              <%= link_to "work dresses", "#", class: "btn second_btn" %>
+            </div>
+            <div class="medium-3 columns btn_link_section">
+              <%= link_to "evening dresses", "#", class: "btn third_btn" %>
+            </div>
+            <div class="medium-3 columns btn_link_section">
+              <%= link_to "evening dresses", "#", class: "btn fourth_btn" %>
+            </div>
+          </div>
           <div class="medium-12 columns bottom_row_clothes">
             <ul>
             <% @products.each do |product| %>
