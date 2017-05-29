@@ -131,13 +131,16 @@
 .product_clothes_dresses_container .right_column .upper_row .upper_inner_middle_section {
   width: 400px;
   margin: auto;
-  padding: 51px 0px;
+  padding: 51px 0px 0px;
+  height: 225px;
 }
 
 .product_clothes_dresses_container .right_column .upper_row .upper_middle_section .header {
   text-transform: capitalize;
   font-weight: bold;
   font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 5px;
 }
 
 .product_clothes_dresses_container .right_column .upper_row .upper_middle_section .content {
