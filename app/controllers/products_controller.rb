@@ -61,7 +61,7 @@ class ProductsController < ApplicationController
   end
 
   def clothes_jeans_and_denims
-    @products = Product.all
+    @products = Product.clothes_jeans_denims
   end
 
   def bags
