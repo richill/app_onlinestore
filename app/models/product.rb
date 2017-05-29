@@ -24,11 +24,10 @@ class Product < ApplicationRecord
     ]
   end 
 
-
-  scope :clothes_dresses, ->() { joins(:category_clothetype).where('category_clothetypes.name' => "Dresses") }
-  scope :bags_shoulder_bags, ->() { joins(:category_bagtype).where('category_bagtypes.name' => "Shoulder Bags") }
-  scope :bags, -> { joins(:category_bagtype).where("category_bagtypes.name IN (?)", ["Across Body Bags", "Bum Bags", "Backpacks", "Clutches", "Coin Purses", "Folder Over Purses", "Gym Bags", "Holdalls", "Makeup Bags", "Satchels", "Shoppers", "Shoulder Bags", "Totes", "Bag Accessories", "Zip Purses"]) }
   scope :clothes, -> { joins(:category_clothetype).where("category_clothetypes.name IN (?)", ["Coats & Jackets", "Dresses", "Hoodies & Sweatshirts", "Jeans & Denims", "Jumpers & Cardigans", "Jumpsuits & Playsuits", "Lingerie & Nightwear", "Loungewear", "Maternity", "Shirts & Blouses", "Shorts", "Skirts", "Socks & Tights", "Sportswear", "Swim & Beachwear", "Tops", "Trousers & Leggings", "T-shirts & Vests", "Workwear Suits"]) }  
+  scope :clothes_dresses, ->() { joins(:category_clothetype).where('category_clothetypes.name' => "Dresses") }
+  scope :bags, -> { joins(:category_bagtype).where("category_bagtypes.name IN (?)", ["Across Body Bags", "Bum Bags", "Backpacks", "Clutches", "Coin Purses", "Folder Over Purses", "Gym Bags", "Holdalls", "Makeup Bags", "Satchels", "Shoppers", "Shoulder Bags", "Totes", "Bag Accessories", "Zip Purses"]) }  
+  scope :bags_shoulder_bags, ->() { joins(:category_bagtype).where('category_bagtypes.name' => "Shoulder Bags") }
 
   scope :sales, -> {where(sale: true)}
   #products on sale
