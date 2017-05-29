@@ -24,6 +24,12 @@ class Product < ApplicationRecord
     ]
   end 
 
+  scope :sales, -> {where(sale: true)}
+  #products sales of all items
+
+  scope :new_items, -> {where(product_new: true)}
+  #products new all items
+
   # -----CategoryClothetype-----
   scope :clothes, -> { joins(:category_clothetype).where("category_clothetypes.name IN (?)", ["Coats & Jackets", "Dresses", "Hoodies & Sweatshirts", "Jeans & Denims", "Jumpers & Cardigans", "Jumpsuits & Playsuits", "Lingerie & Nightwear", "Loungewear", "Maternity", "Shirts & Blouses", "Shorts", "Skirts", "Socks & Tights", "Sportswear", "Swim & Beachwear", "Tops", "Trousers & Leggings", "T-shirts & Vests", "Workwear Suits"]) }  
   scope :clothes_coats_jackets, ->() { joins(:category_clothetype).where('category_clothetypes.name' => "Coats & Jackets") }
@@ -81,11 +87,24 @@ class Product < ApplicationRecord
   scope :accessories_scarves, ->() { joins(:category_accessorytype).where('category_accessorytypes.name' => "Scarves & Snoods") }
   scope :accessories_umbrellas, ->() { joins(:category_accessorytype).where('category_accessorytypes.name' => "Umbrellas") }
 
+  # -----CategoryShoetype-----
+  scope :shoes, -> { joins(:category_shoetype).where("category_shoetypes.name IN (?)", ["Espadrilles", "Flat Boots", "Flat Sandals", "Flat Shoes", "Flat Flops", "Heeled Boots", "Heeled Sandals", "Heeled Shoes", "Loafers", "Pumps", "Shoe Accessories", "Slippers", "Trainers", "Wedges"]) }  
+  scope :shoes_espadrilles, ->() { joins(:category_shoetype).where('category_shoetypes.name' => "Espadrilles") }
+  scope :shoes_flat_boots, ->() { joins(:category_shoetype).where('category_shoetypes.name' => "Flat Boots") }
+  scope :shoes_flat_sandals, ->() { joins(:category_shoetype).where('category_shoetypes.name' => "Flat Sandals") }
+  scope :shoes_flat_shoes, ->() { joins(:category_shoetype).where('category_shoetypes.name' => "Flat Shoes") }
+  scope :shoes_flat_flops, ->() { joins(:category_shoetype).where('category_shoetypes.name' => "Flat Flops") }
+  scope :shoes_heeled_boots, ->() { joins(:category_shoetype).where('category_shoetypes.name' => "Heeled Boots") }
+  scope :shoes_heeled_sandals, ->() { joins(:category_shoetype).where('category_shoetypes.name' => "Heeled Sandals") }
+  scope :shoes_heeled_shoes, ->() { joins(:category_shoetype).where('category_shoetypes.name' => "Heeled Shoes") }
+  scope :shoes_loafers, ->() { joins(:category_shoetype).where('category_shoetypes.name' => "Loafers") }
+  scope :shoes_pumps, ->() { joins(:category_shoetype).where('category_shoetypes.name' => "Pumps") }
+  scope :shoes_accessories, ->() { joins(:category_shoetype).where('category_shoetypes.name' => "Shoe Accessories") }
+  scope :shoes_slippers, ->() { joins(:category_shoetype).where('category_shoetypes.name' => "Slippers") }
+  scope :shoes_trainers, ->() { joins(:category_shoetype).where('category_shoetypes.name' => "Trainers") }
+  scope :shoes_wedges, ->() { joins(:category_shoetype).where('category_shoetypes.name' => "Wedges") }
 
 
-
-  scope :sales, -> {where(sale: true)}
-  #products on sale
 
   def item_colurs
     item_selected_colours = Array.new
