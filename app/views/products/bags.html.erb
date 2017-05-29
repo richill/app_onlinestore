@@ -7,9 +7,7 @@
         <div class="tree_line">
           <span><%= link_to "home", root_path %></span>
           <span class="divider">/</span>
-          <span><%= link_to "bags & purses", bags_products_path %></span>
-          <span class="divider">/</span>
-          <span>shoulder bags</span>
+          <span>bags & purses</span>
         </div>
 
         <!-- left_column -->
@@ -19,45 +17,6 @@
             <li><%= link_to "new in clothing", "#" %></li>
             <li><%= link_to "new in shoes & sandals", "#" %></li>
             <li><%= link_to "new in bags & accssories", "#" %></li>
-          </ul>
-          <ul>
-            <li class="header">womens clothing</li>
-            <li><%= link_to "coats & jackets", "#" %></li>
-            <li><%= link_to "dresses", clothes_dresses_products_path %></li>
-            <li><%= link_to "hoodies & sweatshirts", "#" %></li>
-            <li><%= link_to "jeans & denims", clothes_jeans_and_denims_products_path %></li>
-            <li><%= link_to "jumpers & cardigans", "#" %></li>
-            <li><%= link_to "jumpsuits & playsuits", "#" %></li>
-            <li><%= link_to "lingerie & nightwear", "#" %></li>
-            <li><%= link_to "loungewear", "#" %></li>
-            <li><%= link_to "maternity", "#" %></li>
-            <li><%= link_to "shirts & blouses", "#" %></li>
-            <li><%= link_to "shorts", "#" %></li>
-            <li><%= link_to "skirts", "#" %></li>
-            <li><%= link_to "socks & tights", "#" %></li>
-            <li><%= link_to "sportswear", "#" %></li>
-            <li><%= link_to "swim & beachwear", "#" %></li>
-            <li><%= link_to "tops", "#" %></li>
-            <li><%= link_to "trousers & leggings", "#" %></li>
-            <li><%= link_to "t-shirts & vests", "#" %></li>
-            <li><%= link_to "workwear suits", "#" %></li>
-          </ul>
-          <ul>
-            <li class="header">footwear</li>
-            <li><%= link_to "espadrilles", "#" %></li>
-            <li><%= link_to "flat boots", "#" %></li>
-            <li><%= link_to "flat sandals", "#" %></li>
-            <li><%= link_to "flat shoes", "#" %></li>
-            <li><%= link_to "flat flops", "#" %></li>
-            <li><%= link_to "heeled boots", "#" %></li>
-            <li><%= link_to "heeled sandals", "#" %></li>
-            <li><%= link_to "heeled shoes", "#" %></li>
-            <li><%= link_to "loafers", "#" %></li>
-            <li><%= link_to "pumps", "#" %></li>
-            <li><%= link_to "shoe accessories", "#" %></li>
-            <li><%= link_to "slippers", "#" %></li>
-            <li><%= link_to "trainers", "#" %></li>
-            <li><%= link_to "wedges", "#" %></li>
           </ul>
           <ul>
             <li class="header">bags & accesories</li>
@@ -95,6 +54,30 @@
         </div>
         <!-- right_column -->
         <div class="medium-9 columns right_column">
+          <div class="medium-12 columns upper_row">
+            <div class="medium-3 columns upper_left_section"><%= image_tag("img_bags_01.png") %></div>
+            <div class="medium-6 columns upper_middle_section">
+              <div class="upper_inner_middle_section">
+                <div class="header">New in women’s bags & accessories</div>
+                <div class="content">Always make time for the little things. You’re heading towards our latest arrivals, from butter-soft leather bags to outfit-elevating jewellery</div>
+              </div>
+            </div>
+            <div class="medium-3 columns upper_right_section"><%= image_tag("img_bags_02.png") %></div>
+          </div>
+          <div class="medium-12 columns middle_row_selection">
+            <div class="medium-3 columns btn_link_section"> 
+              <%= link_to "casual dresses", "#", class: "btn first_btn" %>
+            </div>
+            <div class="medium-3 columns btn_link_section">
+              <%= link_to "work dresses", "#", class: "btn second_btn" %>
+            </div>
+            <div class="medium-3 columns btn_link_section">
+              <%= link_to "evening dresses", "#", class: "btn third_btn" %>
+            </div>
+            <div class="medium-3 columns btn_link_section">
+              <%= link_to "evening dresses", "#", class: "btn fourth_btn" %>
+            </div>
+          </div>
           <div class="medium-12 columns bottom_row_clothes">
             <ul>
             <% @products.each do |product| %>

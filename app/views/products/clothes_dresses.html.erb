@@ -121,38 +121,38 @@
           </div>
           <div class="medium-12 columns bottom_row_clothes">
             <ul>
-            <% @dresses.each do |dress| %>
+            <% @products.each do |product| %>
               <li>
                 <div class="dress_img">
-                  <div class="img_item"><%= link_to(image_tag(dress.image_url), dress) %></div>
-                  <% if dress.product_new? %>
+                  <div class="img_item"><%= link_to(image_tag(product.image_url), product) %></div>
+                  <% if product.product_new? %>
                     <div class="new_item">
                       <div class="new_item_inner">new</div>
                     </div>
                   <% end %>
-                  <% if dress.sale? %>
+                  <% if product.sale? %>
                     <div class="sale_clothe_item">
                       <div class="sale_clothe_item_inner">sale</div>
                     </div>
                   <% end %>
                   <div class="img_dress_details">
                     <div class="dress_brand">firstchoice collection</div>
-                    <div class="dress_name"><%= dress.title %></div>
+                    <div class="dress_name"><%= product.title %></div>
                     <div class="dress_price">
                       <span class="currency">
-                        <% if dress.category_currency.name == "Cedis" %>
+                        <% if product.category_currency.name == "Cedis" %>
                           <%= "¢" %>
-                        <% elsif dress.category_currency.name == "Dollars" %>
+                        <% elsif product.category_currency.name == "Dollars" %>
                           <%= "$" %>
-                        <% elsif dress.category_currency.name == "Pounds" %>
+                        <% elsif product.category_currency.name == "Pounds" %>
                           <%= "£" %>
                         <% end %>
                       </span>
                       <span>
-                        <% if dress.sale? %>
-                          <%= number_with_precision("#{dress.saleprice}", precision: 2) %>
+                        <% if product.sale? %>
+                          <%= number_with_precision("#{product.saleprice}", precision: 2) %>
                         <% else %>
-                          <%= number_with_precision("#{dress.price}", precision: 2) %>
+                          <%= number_with_precision("#{product.price}", precision: 2) %>
                         <% end %>
                       </span>
                     </div>
@@ -160,49 +160,49 @@
                 </div>
                 <div class="clear"></div>
                 <div class="dress_details">
-                  <%= link_to dress do %>
+                  <%= link_to product do %>
                     <div class="dress_brand">firstchoice collection</div>
-                    <div class="dress_name"><%= dress.title %></div>
+                    <div class="dress_name"><%= product.title %></div>
                     <div class="dress_price">
                       <span class="currency">
-                        <% if dress.sale? %>
+                        <% if product.sale? %>
                           <span class="price_currency">
                             <span class="currency">
-                              <% if dress.category_currency.name == "Cedis" %>
+                              <% if product.category_currency.name == "Cedis" %>
                                 <%= "¢" %>
-                              <% elsif dress.category_currency.name == "Dollars" %>
+                              <% elsif product.category_currency.name == "Dollars" %>
                                 <%= "$" %>
-                              <% elsif dress.category_currency.name == "Pounds" %>
+                              <% elsif product.category_currency.name == "Pounds" %>
                                 <%= "£" %>
                               <% end %>
                             </span>
-                            <span class="price_sale"><%= number_with_precision("#{dress.price}", precision: 2) %></span>
+                            <span class="price_sale"><%= number_with_precision("#{product.price}", precision: 2) %></span>
                           </span>
                           <span class="price_currency sale_item">
                             <span class="now_text">now</span>
                             <span class="currency">
-                              <% if dress.category_currency.name == "Cedis" %>
+                              <% if product.category_currency.name == "Cedis" %>
                                 <%= "¢" %>
-                              <% elsif dress.category_currency.name == "Dollars" %>
+                              <% elsif product.category_currency.name == "Dollars" %>
                                 <%= "$" %>
-                              <% elsif dress.category_currency.name == "Pounds" %>
+                              <% elsif product.category_currency.name == "Pounds" %>
                                 <%= "£" %>
                               <% end %>
                             </span>
-                            <span class="sale_price"><%= number_with_precision("#{dress.saleprice}", precision: 2) %></span>
+                            <span class="sale_price"><%= number_with_precision("#{product.saleprice}", precision: 2) %></span>
                           </span>
                         <% else %>
                           <div class="price_currency">
                             <span class="currency">
-                              <% if dress.category_currency.name == "Cedis" %>
+                              <% if product.category_currency.name == "Cedis" %>
                                 <%= "¢" %>
-                              <% elsif dress.category_currency.name == "Dollars" %>
+                              <% elsif product.category_currency.name == "Dollars" %>
                                 <%= "$" %>
-                              <% elsif dress.category_currency.name == "Pounds" %>
+                              <% elsif product.category_currency.name == "Pounds" %>
                                 <%= "£" %>
                               <% end %>
                             </span>
-                            <span><%= number_with_precision("#{dress.price}", precision: 2) %></span>
+                            <span><%= number_with_precision("#{product.price}", precision: 2) %></span>
                           </div>
                         <% end %>
                       </span>

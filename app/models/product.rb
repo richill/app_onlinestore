@@ -22,7 +22,12 @@ class Product < ApplicationRecord
     [
       :title
     ]
-  end
+  end 
+
+
+  scope :clothes_dresses, ->() { joins(:category_clothetype).where('category_clothetypes.name' => "Dresses") }
+  scope :bags_shoulder_bags, ->() { joins(:category_bagtype).where('category_bagtypes.name' => "Shoulder Bags") }
+  scope :bags, -> { joins(:category_bagtype).where("category_bagtypes.name IN (?)", ["Across Body Bags", "Bum Bags", "Backpacks", "Clutches", "Coin Purses", "Folder Over Purses", "Gym Bags", "Holdalls", "Makeup Bags", "Satchels", "Shoppers", "Shoulder Bags", "Totes", "Bag Accessories", "Zip Purses"]) }  
 
   scope :sales, -> {where(sale: true)}
   #products on sale
