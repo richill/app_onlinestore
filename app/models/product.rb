@@ -64,6 +64,26 @@ class Product < ApplicationRecord
   scope :bags_accessories, ->() { joins(:category_bagtype).where('category_bagtypes.name' => "Bag Accessories") }
   scope :bags_zip_purses, ->() { joins(:category_bagtype).where('category_bagtypes.name' => "Zip Purses") }
 
+  # -----CategoryAccessorytype-----
+  scope :accessories, -> { joins(:category_accessorytype).where("category_accessorytypes.name IN (?)", ["Belts", "Bow Ties & Collars", "Bracelets", "Capes & Ponchos", "Earrings", "Glasses", "Gloves", "Hair Accessories", "Hats", "Key Rings", "Necklaces", "Rings", "Scarves & Snoods", "Umbrellas"]) }
+  scope :accessories_belts, ->() { joins(:category_accessorytype).where('category_accessorytypes.name' => "Belts") }
+  scope :accessories_bow, ->() { joins(:category_accessorytype).where('category_accessorytypes.name' => "Bow Ties & Collars") }
+  scope :accessories_bracelets, ->() { joins(:category_accessorytype).where('category_accessorytypes.name' => "Bracelets") }
+  scope :accessories_capes, ->() { joins(:category_accessorytype).where('category_accessorytypes.name' => "Capes & Ponchos") }
+  scope :accessories_earrings, ->() { joins(:category_accessorytype).where('category_accessorytypes.name' => "Earrings") }
+  scope :accessories_glasses, ->() { joins(:category_accessorytype).where('category_accessorytypes.name' => "Glasses") }
+  scope :accessories_gloves, ->() { joins(:category_accessorytype).where('category_accessorytypes.name' => "Gloves") }
+  scope :accessories_hair, ->() { joins(:category_accessorytype).where('category_accessorytypes.name' => "Hair Accessories") }
+  scope :accessories_hats, ->() { joins(:category_accessorytype).where('category_accessorytypes.name' => "Hats") }
+  scope :accessories_key_rings, ->() { joins(:category_accessorytype).where('category_accessorytypes.name' => "Key Rings") }
+  scope :accessories_necklaces, ->() { joins(:category_accessorytype).where('category_accessorytypes.name' => "Necklaces") }
+  scope :accessories_rings, ->() { joins(:category_accessorytype).where('category_accessorytypes.name' => "Rings") }
+  scope :accessories_scarves, ->() { joins(:category_accessorytype).where('category_accessorytypes.name' => "Scarves & Snoods") }
+  scope :accessories_umbrellas, ->() { joins(:category_accessorytype).where('category_accessorytypes.name' => "Umbrellas") }
+
+
+
+
   scope :sales, -> {where(sale: true)}
   #products on sale
 
