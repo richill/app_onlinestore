@@ -24,7 +24,7 @@ class Product < ApplicationRecord
     ]
   end 
 
-  scope :sales, -> {where(sale: true)}
+  scope :sale_items, -> {where(sale: true)}
   #products sales of all items
 
   scope :new_items, -> {where(product_new: true)}
