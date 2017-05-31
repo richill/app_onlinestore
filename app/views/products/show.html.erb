@@ -41,7 +41,7 @@
               <%= image_tag(@product.image_url) if @product.image? %>
             </div>
           </div>
-          <div class="medium-6 columns middle_content">
+          <div class="medium-7 columns middle_content">
             <div class="item_label">firstchoice collection</div>
             <div class="item_title">
               <span class="product_item"><%= @product.title %></span>
@@ -221,7 +221,29 @@
               <%= link_to 'Back', products_path %>
             </div>
           </div>
-          <div class="medium-3 columns right_content">right_content</div>
+          <div class="medium-2 columns right_content">
+            <div class="featured_products">
+              <div class="column_title">why not try?...</div>
+              <ul>
+              <% @products.clothes.limit(3).each do |product| %>
+                <li>
+                  <%= link_to product_path(product) do %>
+                    <div><%= image_tag(product.image_url) if product.image? %></div>
+                    <div class="title"><%= product.title %></div>
+                    <div class="price">
+                      <% if product.sale? %>
+                        <%= number_with_precision("#{product.saleprice}", precision: 2) %>
+                      <% else %>
+                        <%= number_with_precision("#{product.price}", precision: 2) %>
+                      <% end %>
+                    </div>
+                  <% end %>
+                </li>
+               
+              <% end %>
+              </ul>
+            </div>
+          </div>
           <div class="clear"></div>
           
         </div>
