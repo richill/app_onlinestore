@@ -254,10 +254,70 @@
                     <% end %>
                   </li>
                   <% end %>
-                <% end %>
+                <!-- clothes -->
+                
+                <!-- accessories -->
+                <% elsif @product.category_type.name == "Accessories" %>
+                  <% @products.accessories.new_items.limit(3).sort_by(&:created_at).each do |product| %>
+                  <li>
+                    <%= link_to product_path(product) do %>
+                      <div><%= image_tag(product.image_url) if product.image? %></div>
+                      <div class="title"><%= truncate(product.title, length: 34) %></div>
+                      <div class="price_currency">
+                        <span class="currency">
+                          <% if product.category_currency.name == "Cedis" %>
+                            <%= "¢" %>
+                          <% elsif product.category_currency.name == "Dollars" %>
+                            <%= "$" %>
+                          <% elsif product.category_currency.name == "Pounds" %>
+                            <%= "£" %>
+                          <% end %>
+                        </span>
+                        <span class="price">
+                          <% if product.sale? %>
+                            <%= number_with_precision("#{product.saleprice}", precision: 2) %>
+                          <% else %>
+                            <%= number_with_precision("#{product.price}", precision: 2) %>
+                          <% end %>
+                        </span>
+                      </div>
+                    <% end %>
+                  </li>
+                  <% end %>
+                <!-- accessories -->
+
+                <!-- shoes -->
+                <% elsif @product.category_type.name == "Shoes" %>
+                  <% @products.shoes.new_items.limit(3).sort_by(&:created_at).each do |product| %>
+                  <li>
+                    <%= link_to product_path(product) do %>
+                      <div><%= image_tag(product.image_url) if product.image? %></div>
+                      <div class="title"><%= truncate(product.title, length: 34) %></div>
+                      <div class="price_currency">
+                        <span class="currency">
+                          <% if product.category_currency.name == "Cedis" %>
+                            <%= "¢" %>
+                          <% elsif product.category_currency.name == "Dollars" %>
+                            <%= "$" %>
+                          <% elsif product.category_currency.name == "Pounds" %>
+                            <%= "£" %>
+                          <% end %>
+                        </span>
+                        <span class="price">
+                          <% if product.sale? %>
+                            <%= number_with_precision("#{product.saleprice}", precision: 2) %>
+                          <% else %>
+                            <%= number_with_precision("#{product.price}", precision: 2) %>
+                          <% end %>
+                        </span>
+                      </div>
+                    <% end %>
+                  </li>
+                  <% end %>
+                <!-- shoes -->
 
                 <!-- bags -->
-                <% if @product.category_type.name == "Bags & Purses" %>
+                <% elsif @product.category_type.name == "Bags & Purses" %>
                   <% @products.bags.new_items.limit(3).sort_by(&:created_at).each do |product| %>
                   <li>
                     <%= link_to product_path(product) do %>
@@ -284,6 +344,37 @@
                     <% end %>
                   </li>
                   <% end %>
+                <!-- bags -->
+
+                <!-- gifts -->
+                <% elsif @product.category_type.name == "Gifts" %>
+                  <% @products.gifts.new_items.limit(3).sort_by(&:created_at).each do |product| %>
+                  <li>
+                    <%= link_to product_path(product) do %>
+                      <div><%= image_tag(product.image_url) if product.image? %></div>
+                      <div class="title"><%= truncate(product.title, length: 34) %></div>
+                      <div class="price_currency">
+                        <span class="currency">
+                          <% if product.category_currency.name == "Cedis" %>
+                            <%= "¢" %>
+                          <% elsif product.category_currency.name == "Dollars" %>
+                            <%= "$" %>
+                          <% elsif product.category_currency.name == "Pounds" %>
+                            <%= "£" %>
+                          <% end %>
+                        </span>
+                        <span class="price">
+                          <% if product.sale? %>
+                            <%= number_with_precision("#{product.saleprice}", precision: 2) %>
+                          <% else %>
+                            <%= number_with_precision("#{product.price}", precision: 2) %>
+                          <% end %>
+                        </span>
+                      </div>
+                    <% end %>
+                  </li>
+                  <% end %>
+                <!-- gifts -->
                 <% end %>
 
 
