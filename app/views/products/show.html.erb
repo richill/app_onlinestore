@@ -228,7 +228,7 @@
 
                 <!-- clothes -->
                 <% if @product.category_type.name == "Clothes" %>
-                  <% @products.clothes.new_items.limit(3).sort_by(&:created_at).each do |product| %>
+                  <% @products.clothes.new_items.limit(3).each do |product| %>
                   <li>
                     <%= link_to product_path(product) do %>
                       <div><%= image_tag(product.image_url) if product.image? %></div>
@@ -258,7 +258,7 @@
                 
                 <!-- accessories -->
                 <% elsif @product.category_type.name == "Accessories" %>
-                  <% @products.accessories.new_items.limit(3).sort_by(&:created_at).each do |product| %>
+                  <% @products.accessories.new_items.limit(3).each do |product| %>
                   <li>
                     <%= link_to product_path(product) do %>
                       <div><%= image_tag(product.image_url) if product.image? %></div>
@@ -288,7 +288,7 @@
 
                 <!-- shoes -->
                 <% elsif @product.category_type.name == "Shoes" %>
-                  <% @products.shoes.new_items.limit(3).sort_by(&:created_at).each do |product| %>
+                  <% @products.shoes.new_items.limit(3).each do |product| %>
                   <li>
                     <%= link_to product_path(product) do %>
                       <div><%= image_tag(product.image_url) if product.image? %></div>
@@ -318,7 +318,7 @@
 
                 <!-- bags -->
                 <% elsif @product.category_type.name == "Bags & Purses" %>
-                  <% @products.bags.new_items.limit(3).sort_by(&:created_at).each do |product| %>
+                  <% @products.bags.new_items.limit(3).each do |product| %>
                   <li>
                     <%= link_to product_path(product) do %>
                       <div><%= image_tag(product.image_url) if product.image? %></div>
@@ -348,7 +348,7 @@
 
                 <!-- gifts -->
                 <% elsif @product.category_type.name == "Gifts" %>
-                  <% @products.gifts.new_items.limit(3).sort_by(&:created_at).each do |product| %>
+                  <% @products.gifts.new_items.limit(3).each do |product| %>
                   <li>
                     <%= link_to product_path(product) do %>
                       <div><%= image_tag(product.image_url) if product.image? %></div>

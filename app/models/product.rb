@@ -24,6 +24,9 @@ class Product < ApplicationRecord
     ]
   end 
 
+  scope :random, -> { order(Arel::Nodes::NamedFunction.new('RANDOM', [])) }
+  #products are displayed randomly each time the page is refereshed
+
   scope :sale_items, -> {where(sale: true)}
   #products sales of all items
 

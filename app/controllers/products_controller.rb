@@ -7,7 +7,7 @@ class ProductsController < ApplicationController
   end
 
   def show
-    @products = Product.all
+    @products = Product.random
   end
 
   def new
@@ -54,27 +54,27 @@ class ProductsController < ApplicationController
   # --------------- products ---------------
 
   def sales
-    @products = Product.sale_items
+    @products = Product.random.sale_items
   end
   
   def clothes
-    @products = Product.clothes
+    @products = Product.random.clothes
   end
 
   def clothes_dresses
-    @products = Product.clothes_dresses
+    @products = Product.random.clothes_dresses
   end
 
   def clothes_jeans_and_denims
-    @products = Product.clothes_jeans_denims
+    @products = Product.random.clothes_jeans_denims
   end
 
   def bags
-    @products = Product.bags
+    @products = Product.random.bags
   end
 
   def bags_shoulder_bags
-    @products = Product.bags_shoulder_bags
+    @products = Product.random.bags_shoulder_bags
   end
 
   # --------------- products ---------------
