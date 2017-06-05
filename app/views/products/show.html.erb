@@ -36,12 +36,12 @@
           <span><%= @product.title %></span>
         </div>
         <div class="product_show_details">
-          <div class="medium-3 columns left_content">
+          <div class="medium-4 columns left_content">
             <div class="image_container">
               <%= image_tag(@product.image_url) if @product.image? %>
             </div>
           </div>
-          <div class="medium-7 columns middle_content">
+          <div class="medium-6 columns middle_content">
             <div class="item_label">firstchoice collection</div>
             <div class="item_title">
               <span class="product_item"><%= @product.title %></span>
@@ -208,8 +208,12 @@
             <div class="clear"></div>
 
             <div class="description_section">
-              <div class="header"><i class="fa fa-caret-down" aria-hidden="true"></i> Description</div>
-              <div class="description_content"><%= @product.description %></div>
+              
+              <div class="description_content">
+                <div></div>
+                <div class="header">Description</div>
+                <div class="description"><%= truncate(@product.description, length: 310) %> <%= link_to "view", "#" %></div>
+              </div>
             </div>
             <p class="hide">
               <strong>Stock:</strong>
