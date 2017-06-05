@@ -94,19 +94,11 @@
               <% end %>
             </div>
 
-            <% if @product.product_new == true && @product.category_type.name == "Clothes" %>
-              <div class="minor_info_new">
-                Free standard delivery on orders over £50. Conditions apply.
-              </div>
-            <% elsif @product.product_new != true && @product.category_type.name == "Clothes" %>
-              <div class="minor_info_nonew">
-                Free standard delivery on orders over £50. Conditions apply.
-              </div>
-            <% elsif @product.category_type.name != "Clothes" %>
-              <div class="minor_info">
-                Free standard delivery on orders over £50. Conditions apply.
-              </div>
-            <% end %>
+          
+
+            <div class="minor_info">
+              Free standard delivery on orders over £50. Conditions apply.
+            </div>
 
             <div class="medium-12 columns colour_info">
               <span class="colour_title">item colour: </span>

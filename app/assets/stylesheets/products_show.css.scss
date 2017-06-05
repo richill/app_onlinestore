@@ -109,10 +109,9 @@
   margin: 8px 0px;
 }
 
-
-
 .middle_content .price_currency {
-  margin: 10px 0px;
+  margin: 2px 0px;
+  display: inline-block;
 }
 
 .middle_content .price_currency .currency, .price {
@@ -139,28 +138,6 @@
 
 .middle_content .sale_item .price, .sale_item .currency {
   color: #E34B51 !important;
-}
-
-.middle_content .minor_info_new {
-  padding: 10px 0px;
-  border-top: 1px dotted #a3a3a3;
-  border-bottom: 1px dotted #a3a3a3;
-  clear: both;
-  font-size: 14px;
-  color: #E34B51;
-  letter-spacing: 1px;
-  word-spacing: 1px;
-}
-
-.middle_content .minor_info_nonew {
-  padding: 12px 0px;
-  border-top: 1px dotted #a3a3a3;
-  border-bottom: 1px dotted #a3a3a3;
-  clear: both;
-  font-size: 14px;
-  color: #E34B51;
-  letter-spacing: 1px;
-  word-spacing: 1px;
 }
 
 .middle_content .minor_info {
