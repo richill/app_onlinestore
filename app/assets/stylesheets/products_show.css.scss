@@ -66,6 +66,7 @@
 .left_content .image_container {
   // height: 397px;
   height: 530px;
+  background-color: red;
 }
 
 .left_content img {
@@ -263,8 +264,8 @@
 }
 
 .middle_content .colour_info {
-  border-bottom: 1px solid #c1c1c1;
   padding: 15px 0px !important;
+  border-bottom: 1px solid rgba(40, 48, 45, 0.1) !important;
 }
 
 .middle_content .detail_info {
@@ -356,7 +357,7 @@
   background-color: #F8F8F8;
   padding: 10px 15px;
   height: 104px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid rgba(40, 48, 45, 0.1) !important;
 }
 
 .middle_content .description_content .header {
