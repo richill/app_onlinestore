@@ -208,7 +208,6 @@
             <div class="clear"></div>
 
             <div class="description_section">
-              
               <div class="description_content">
                 <div></div>
                 <div class="header">Description</div>
@@ -232,7 +231,8 @@
 
                 <!-- clothes -->
                 <% if @product.category_type.name == "Clothes" %>
-                  <% @products.clothes.new_items.limit(3).each do |product| %>
+                  <%# @products.clothes.new_items.limit(3).each do |product| %>
+                  <% @products.clothes.limit(3).each do |product| %>
                   <li>
                     <%= link_to product_path(product) do %>
                       <div><%= image_tag(product.image_url) if product.image? %></div>
