@@ -65,14 +65,14 @@
 
 .left_content .image_container {
   // height: 397px;
-  height: 530px;
+  height: 526px;
+  padding: 0px;
+  // height: 526px;
   background-color: #E0DEE5;
 }
 
 .left_content img {
-  // height: 100% !important;
-  // height: 397px;
-  height: 530px;
+  height: 525px;
 }
 
 // --- middle_content ---
@@ -109,6 +109,8 @@
   margin: 8px 0px;
 }
 
+
+
 .middle_content .price_currency {
   margin: 10px 0px;
 }
@@ -137,6 +139,28 @@
 
 .middle_content .sale_item .price, .sale_item .currency {
   color: #E34B51 !important;
+}
+
+.middle_content .minor_info_new {
+  padding: 10px 0px;
+  border-top: 1px dotted #a3a3a3;
+  border-bottom: 1px dotted #a3a3a3;
+  clear: both;
+  font-size: 14px;
+  color: #E34B51;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+.middle_content .minor_info_nonew {
+  padding: 12px 0px;
+  border-top: 1px dotted #a3a3a3;
+  border-bottom: 1px dotted #a3a3a3;
+  clear: both;
+  font-size: 14px;
+  color: #E34B51;
+  letter-spacing: 1px;
+  word-spacing: 1px;
 }
 
 .middle_content .minor_info {
@@ -356,7 +380,7 @@
 .middle_content .description_content {
   background-color: #F8F8F8;
   padding: 10px 15px;
-  height: 104px;
+  height: 100px;
   border-bottom: 1px solid rgba(40, 48, 45, 0.1) !important;
 }
 

@@ -37,7 +37,7 @@
         </div>
         <div class="product_show_details">
           <div class="medium-4 columns left_content">
-            <div class="image_container">
+            <div class="medium-12 columns image_container">
               <%= image_tag(@product.image_url) if @product.image? %>
             </div>
           </div>
@@ -94,9 +94,19 @@
               <% end %>
             </div>
 
-            <div class="minor_info">
-              Free standard delivery on orders over £50. Conditions apply.
-            </div>
+            <% if @product.product_new == true && @product.category_type.name == "Clothes" %>
+              <div class="minor_info_new">
+                Free standard delivery on orders over £50. Conditions apply.
+              </div>
+            <% elsif @product.product_new != true && @product.category_type.name == "Clothes" %>
+              <div class="minor_info_nonew">
+                Free standard delivery on orders over £50. Conditions apply.
+              </div>
+            <% elsif @product.category_type.name != "Clothes" %>
+              <div class="minor_info">
+                Free standard delivery on orders over £50. Conditions apply.
+              </div>
+            <% end %>
 
             <div class="medium-12 columns colour_info">
               <span class="colour_title">item colour: </span>
