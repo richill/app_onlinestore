@@ -211,7 +211,10 @@
               <div class="description_content">
                 <div></div>
                 <div class="header">Description</div>
-                <div class="description"><%= truncate(@product.description, length: 310) %> <%= link_to "view", "#" %></div>
+                <div class="description">
+                  <%= truncate(@product.description, length: 310) %> 
+                  <a data-open="exampleModal1">Click me for a modal</a>
+                </div>
               </div>
             </div>
             <p class="hide">
