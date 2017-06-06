@@ -213,7 +213,8 @@
                 <div class="header">Description</div>
                 <div class="description">
                   <%= truncate(@product.description, length: 310) %> 
-                  <a data-open="exampleModal1">Click me for a modal</a>
+                  <a data-open="modalProductDescription">view</a>
+                  <div><%= render 'shared/modal_size_guide' %></div>
                 </div>
               </div>
             </div>
