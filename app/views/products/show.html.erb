@@ -215,6 +215,13 @@
                   <%= truncate(@product.description, length: 310) %> 
                   <a data-open="modalProductDescription">view</a>
                   <div><%= render 'shared/modal_size_guide' %></div>
+
+                  <!-- working_content:modal_link -->
+                  <a href="#" data-reveal-id="myModal-match-info-example-img">view example</a>
+                  <div><%= render 'shared/modal_match_info_example_img' %></div>
+                  <!-- working_content:modal_link -->
+
+
                 </div>
               </div>
             </div>
