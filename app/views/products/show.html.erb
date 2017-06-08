@@ -239,7 +239,6 @@
             <div class="featured_products">
               <div class="column_title">why not try?...</div>
               <ul>
-
                 <!-- clothes -->
                 <% if @product.category_type.name == "Clothes" %>
                   <% @products.clothes.new_items.limit(3).each do |product| %>
@@ -390,13 +389,26 @@
                   <% end %>
                 <!-- gifts -->
                 <% end %>
-
-
               </ul>
             </div>
           </div>
           <div class="clear"></div>
-          
+        </div>
+        <div class="product_recomended_items">
+          <div class="recomended_title">
+            <div class="line_content">
+              <div class="line_text">first choice</div>
+              <div class="line_divider"></div> 
+            </div>
+            <div class="line_sub_text">you may also like</div>
+          </div>
+          <div class="clear"></div>
+
+          <div class="medium-12 columns listed_recomended_products">
+            <% @products.limit(4).each do |product| %>
+              <div class="medium-3 columns recomended_item">1</div>
+            <% end %>
+          </div>
         </div>
       </div>
     </div>

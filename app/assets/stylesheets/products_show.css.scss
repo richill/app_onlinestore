@@ -51,6 +51,7 @@
 
 .product_show_main_container .product_show_details {
   padding: 20px 0px;
+  margin-bottom: 25px;
 }
 
 
@@ -436,6 +437,52 @@
 // ---------------------------
 //     workings
 // ---------------------------
+
+.listed_recomended_products {
+  padding: 0px !important;
+}
+
+.recomended_title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.line_content {
+  position: relative;
+  width: 200px;
+  height: 30px;
+  margin: auto;
+}
+
+.line_divider {
+  position: absolute;
+  background-color: #000;
+  width: 200px;
+  height: 1px;
+  top: 11px;
+}
+
+.line_text {
+  text-transform: capitalize;
+  text-align: center;
+  width: 115px;
+  background: #fff;
+  z-index: 1000 !important;
+  position: absolute;
+  left: 42px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 15px;
+  color: #000;
+}
+
+.line_sub_text {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+
 
 
 
