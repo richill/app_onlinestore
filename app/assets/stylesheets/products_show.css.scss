@@ -19,7 +19,7 @@
   width: 1200px;
   margin: auto;
   background-color: #fff;
-  min-height: 2400px;
+  min-height: 1200px;
 }
 
 
@@ -72,17 +72,17 @@
 
 
 // --- middle_content ---
-.middle_content .item_title {
+.product_show_main_container .middle_content .item_title {
   position: relative;
 }
 
-.middle_content .item_title .product_item {
+.product_show_main_container .middle_content .item_title .product_item {
   font-size: 20px;
   color: #262626 !important;
   text-transform: capitalize;
 }
 
-.middle_content .product_new {
+.product_show_main_container .middle_content .product_new {
   background-color: #262626;
   color: #fff;
   font-size: 12px;
@@ -433,26 +433,19 @@
   text-align: center;
 }
 
-
-// ---------------------------
-//     workings
-// ---------------------------
-
-
-
-.recomended_title {
+.product_show_main_container .recomended_title {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.line_content {
+.product_show_main_container .line_content {
   position: relative;
   width: 200px;
   height: 30px;
   margin: auto;
 }
 
-.line_divider {
+.product_show_main_container .line_divider {
   position: absolute;
   background-color: #000;
   width: 200px;
@@ -460,7 +453,7 @@
   top: 11px;
 }
 
-.line_text {
+.product_show_main_container .line_text {
   text-transform: capitalize;
   text-align: center;
   width: 115px;
@@ -474,40 +467,40 @@
   color: #000;
 }
 
-.line_sub_text {
+.product_show_main_container .line_sub_text {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 20px;
 }
 
-.listed_recomended_products {
+.product_show_main_container .listed_recomended_products {
   padding: 0px !important;
   border-left: 2px solid rgba(40, 48, 45, 0.1) !important;
   border-right: 2px solid rgba(40, 48, 45, 0.1) !important;
 }
 
-.recomended_item {
-  // background-color: red;
-}
-
-.recomended_item .title {
+.product_show_main_container .recomended_item .title {
   color: #262626 !important;
   text-align: center;
   margin-top: 5px;
   font-size: 13px;
 }
 
-.recomended_item .divider {
+.product_show_main_container .recomended_item .divider {
   border-bottom: 1px solid rgba(40, 48, 45, 0.1) !important;
   margin: 6px 45px;
 }
 
-.recomended_item .price_currency {
+.product_show_main_container .recomended_item .price_currency {
   color: #262626 !important;
   text-align: center;
   font-size: 13px;
 }
 
+
+// ---------------------------
+//     workings
+// ---------------------------
 
 
 
