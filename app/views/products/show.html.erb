@@ -217,7 +217,7 @@
                   <div><%= render 'shared/modal_size_guide' %></div>
 
                   <!-- working_content:modal_link -->
-                  <a href="#" data-reveal-id="myModal-match-info-example-img">view example</a>
+                  <!-- <a href="#" data-reveal-id="myModal-match-info-example-img">view example</a> -->
                   <div><%= render 'shared/modal_match_info_example_img' %></div>
                   <!-- working_content:modal_link -->
 
@@ -405,8 +405,32 @@
           <div class="clear"></div>
 
           <div class="medium-12 columns listed_recomended_products">
-            <% @products.limit(4).each do |product| %>
-              <div class="medium-3 columns recomended_item">1</div>
+            <% @products.random.limit(6).each do |product| %>
+              <div class="medium-2 columns recomended_item">
+                <%= link_to product_path(product) do %>
+                  <div><%= image_tag(product.image_url) %></div>
+                  <div class="title"><%= truncate(product.title, length: 45) %></div>
+                  <div class="divider"></div>
+                  <div class="price_currency">
+                    <span class="currency">
+                      <% if product.category_currency.name == "Cedis" %>
+                        <%= "¢" %>
+                      <% elsif product.category_currency.name == "Dollars" %>
+                        <%= "$" %>
+                      <% elsif product.category_currency.name == "Pounds" %>
+                        <%= "£" %>
+                      <% end %>
+                    </span>
+                    <span class="price">
+                      <% if product.sale? %>
+                        <%= number_with_precision("#{product.saleprice}", precision: 2) %>
+                      <% else %>
+                        <%= number_with_precision("#{product.price}", precision: 2) %>
+                      <% end %>
+                    </span>
+                  </div>
+                <% end %>
+              </div>
             <% end %>
           </div>
         </div>

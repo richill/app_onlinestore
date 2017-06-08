@@ -438,9 +438,7 @@
 //     workings
 // ---------------------------
 
-.listed_recomended_products {
-  padding: 0px !important;
-}
+
 
 .recomended_title {
   text-align: center;
@@ -482,6 +480,33 @@
   font-size: 20px;
 }
 
+.listed_recomended_products {
+  padding: 0px !important;
+  border-left: 2px solid rgba(40, 48, 45, 0.1) !important;
+  border-right: 2px solid rgba(40, 48, 45, 0.1) !important;
+}
+
+.recomended_item {
+  // background-color: red;
+}
+
+.recomended_item .title {
+  color: #262626 !important;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.recomended_item .divider {
+  border-bottom: 1px solid rgba(40, 48, 45, 0.1) !important;
+  margin: 6px 45px;
+}
+
+.recomended_item .price_currency {
+  color: #262626 !important;
+  text-align: center;
+  font-size: 13px;
+}
 
 
 
