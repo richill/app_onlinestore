@@ -38,7 +38,17 @@
         <div class="product_show_details">
           <div class="medium-4 columns left_content">
             <div class="medium-12 columns image_container">
-              <%= image_tag(@product.image_url) if @product.image? %>
+              <div class="product_img"><%= image_tag(@product.image_url) if @product.image? %></div>
+              <% if @product.sale? %>
+                <div class="sale_clothe_item">
+                  <div class="sale_clothe_item_inner">sale</div>
+                </div>
+              <% end %>
+              <% if @product.product_new? %>
+                <div class="new_item">
+                  <div class="new_item_inner">new</div>
+                </div>
+              <% end %>
             </div>
           </div>
           <div class="medium-6 columns middle_content">

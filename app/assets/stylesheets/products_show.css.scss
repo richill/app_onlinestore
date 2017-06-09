@@ -64,11 +64,71 @@
   height: 526px;
   padding: 0px;
   background-color: #E0DEE5;
+  position: relative;
+}
+
+.product_show_main_container .left_content .product_img {
+  position: absolute;
 }
 
 .product_show_main_container .left_content img {
   height: 525px;
 }
+
+.product_show_main_container .left_content .sale_clothe_item {
+  position: absolute;
+}
+
+.product_show_main_container .left_content .sale_clothe_item {
+  font-size: 12px;
+  letter-spacing: 1px;
+  background-color: #E34B51;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  padding: 3px;
+  border-radius: 200px;
+  margin: 10px;
+}
+
+.product_show_main_container .left_content .sale_clothe_item_inner {
+  background-color: #E34B51;
+  height: 44px;
+  width: 44px;
+  text-align: center;
+  padding: 11px 0px;
+  border-radius: 200px;
+  border: 1px solid #fff;
+}
+
+.product_show_main_container .left_content .new_item {
+  position: absolute;
+}
+
+.product_show_main_container .left_content .new_item {
+  font-size: 12px;
+  letter-spacing: 1px;
+  background-color: black;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  padding: 3px;
+  border-radius: 200px;
+  margin: 10px;
+}
+
+.product_show_main_container .left_content .new_item_inner {
+  background-color: black;
+  height: 44px;
+  width: 44px;
+  text-align: center;
+  padding: 11px 0px;
+  border-radius: 200px;
+  border: 1px solid #fff;
+}
+
 
 
 // --- middle_content ---
@@ -501,7 +561,6 @@
 // ---------------------------
 //     workings
 // ---------------------------
-
 
 
 
