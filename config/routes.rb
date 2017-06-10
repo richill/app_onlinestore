@@ -8,6 +8,7 @@ Rails.application.routes.draw do
       get 'bags/shoulder-bags',            to: 'products#bags_shoulder_bags'
       get 'bags'
       get 'sales'
+      get 'latest'
     end
   end
 

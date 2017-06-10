@@ -56,6 +56,10 @@ class ProductsController < ApplicationController
   def sales
     @products = Product.random.sale_items
   end
+
+  def latest
+    @products = Product.random.new_items
+  end
   
   def clothes
     @products = Product.random.clothes
