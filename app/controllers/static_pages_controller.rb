@@ -1,5 +1,5 @@
 class StaticPagesController < ApplicationController
-  before_action :set_product
+  before_action :set_product_search
 
   def homepg
   end
@@ -8,7 +8,7 @@ class StaticPagesController < ApplicationController
   end
 
   private
-    def set_product
+    def set_product_search
       @search = Product.search(params[:q])
       @products = @search.result(distinct: true)
     end

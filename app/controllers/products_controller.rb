@@ -55,30 +55,44 @@ class ProductsController < ApplicationController
 
   def sales
     @products = Product.random.sale_items
+    @search = Product.search(params[:q])
+    @products = @search.result(distinct: true)
   end
 
   def latest
     @products = Product.random.new_items
+    @search = Product.search(params[:q])
+    @products = @search.result(distinct: true)
   end
   
   def clothes
     @products = Product.random.clothes
+    @search = Product.search(params[:q])
+    @products = @search.result(distinct: true)
   end
 
   def clothes_dresses
     @products = Product.random.clothes_dresses
+    @search = Product.search(params[:q])
+    @products = @search.result(distinct: true)
   end
 
   def clothes_jeans_and_denims
     @products = Product.random.clothes_jeans_denims
+    @search = Product.search(params[:q])
+    @products = @search.result(distinct: true)
   end
 
   def bags
     @products = Product.random.bags
+    @search = Product.search(params[:q])
+    @products = @search.result(distinct: true)
   end
 
   def bags_shoulder_bags
     @products = Product.random.bags_shoulder_bags
+    @search = Product.search(params[:q])
+    @products = @search.result(distinct: true)
   end
 
   # --------------- products ---------------
