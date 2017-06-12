@@ -8,6 +8,8 @@ class ProductsController < ApplicationController
 
   def show
     @products = Product.random
+    @search = Product.search(params[:q])
+    @products = @search.result(distinct: true)
   end
 
   def new

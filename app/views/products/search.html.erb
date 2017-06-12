@@ -16,7 +16,6 @@
               <th>Reference</th>
               <th>Stock</th>
               <th>Sale</th>
-              <th colspan="3"></th>
             </tr>
           </thead>
 
@@ -31,9 +30,6 @@
                 <td><%= product.reference %></td>
                 <td><%= product.stock %></td>
                 <td><%= product.sale %></td>
-                <td><%= link_to 'Show', product %></td>
-                <td><%= link_to 'Edit', edit_product_path(product) %></td>
-                <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
               </tr>
             <% end %>
           </tbody>
