@@ -27,8 +27,7 @@
             <div><%= link_to "first choice", root_path %></div>
           </li>
           <li class="search">
-            <%= search_form_for @search, url: search_path do |f| %>
-            <%# search_form_for(@search) do |f| %>
+            <%= search_form_for @search, url: search_products_path do |f| %>
              <%= f.text_field  :title_cont, placeholder: "What are you looking for?" %>
              <%= f.submit 'go' %>
             <% end %>
