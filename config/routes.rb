@@ -9,6 +9,7 @@ Rails.application.routes.draw do
       get 'bags'
       get 'sales'
       get 'latest'
+      get 'search'                         to: 'products#search_products'
     end
   end
 
