@@ -87,8 +87,6 @@ class ProductsController < ApplicationController
     @products_dress = @search.result(distinct: true).clothes_dresses.random
   end
 
-
-
   def clothes_jeans_and_denims
     @products_jeans = Product.random.clothes_jeans_denims
     @search = Product.search(params[:q])

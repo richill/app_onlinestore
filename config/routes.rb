@@ -16,8 +16,8 @@ Rails.application.routes.draw do
   devise_for :users, controllers: {registrations: 'users/registrations'}, defaults: { format: 'html' }
   # devise_for :users
   devise_scope :user do
-    get 'login', to: 'devise/sessions#new' #signin_path
-    get 'register', to: 'devise/registrations#new' #signup_path
+    get 'login',    to: 'devise/sessions#new'       #signin_path
+    get 'register', to: 'devise/registrations#new'  #signup_path
   end
 
   #static pages

@@ -14,6 +14,7 @@
 
         <!-- left_column -->
         <div class="medium-3 columns left_column">
+          <%= link_to "display all", clothes_dresses_products_path %>
           <%= search_form_for @search_dress, url: clothes_dresses_products_path do |f| %>
           <div class="filter_search_btn"><button><%= f.submit 'search' %></button></div>
           <div>
