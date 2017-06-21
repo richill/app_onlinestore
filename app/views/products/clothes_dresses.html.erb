@@ -20,6 +20,26 @@
             <div class="filter_search_btn"><button><%# f.submit 'search' %></button></div>
             
             <div class="category_section">
+              <div class="divider"></div>
+              <div class="cat_header">
+                <span class="icon"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                <span class="title">size</span>
+              </div>
+              <ul class="category_section_list">
+                <% CategoryColour.all.each do |colour| %>
+                  <% if colour.products.clothes_dresses.count > 0 %>
+                    <li>
+                    <%= check_box_tag('q[category_colour_name_cont_any][]', colour.name) %>
+                    <span class="category_name"><%= colour.name %></span>
+                    </li>
+                  <% else %>
+                    <% '' %>
+                  <% end %>
+                <% end %>
+              </ul>
+            </div>
+
+            <div class="category_section">
               <div class="cat_header">
                 <span class="icon"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
                 <span class="title">colour</span>
@@ -41,86 +61,9 @@
 
             <% end %>
           </div>
-
-          <ul>
-            <li class="header">new in</li>
-            <li><%= link_to "new in clothing", "#" %></li>
-            <li><%= link_to "new in shoes & sandals", "#" %></li>
-            <li><%= link_to "new in bags & accssories", "#" %></li>
-          </ul>
-          <ul>
-            <li class="header">womens clothing</li>
-            <li><%= link_to "coats & jackets", "#" %></li>
-            <li><%= link_to "dresses", clothes_dresses_products_path %></li>
-            <li><%= link_to "hoodies & sweatshirts", "#" %></li>
-            <li><%= link_to "jeans & denims", clothes_jeans_and_denims_products_path %></li>
-            <li><%= link_to "jumpers & cardigans", "#" %></li>
-            <li><%= link_to "jumpsuits & playsuits", "#" %></li>
-            <li><%= link_to "lingerie & nightwear", "#" %></li>
-            <li><%= link_to "loungewear", "#" %></li>
-            <li><%= link_to "maternity", "#" %></li>
-            <li><%= link_to "shirts & blouses", "#" %></li>
-            <li><%= link_to "shorts", "#" %></li>
-            <li><%= link_to "skirts", "#" %></li>
-            <li><%= link_to "socks & tights", "#" %></li>
-            <li><%= link_to "sportswear", "#" %></li>
-            <li><%= link_to "swim & beachwear", "#" %></li>
-            <li><%= link_to "tops", "#" %></li>
-            <li><%= link_to "trousers & leggings", "#" %></li>
-            <li><%= link_to "t-shirts & vests", "#" %></li>
-            <li><%= link_to "workwear suits", "#" %></li>
-          </ul>
-          <ul>
-            <li class="header">footwear</li>
-            <li><%= link_to "espadrilles", "#" %></li>
-            <li><%= link_to "flat boots", "#" %></li>
-            <li><%= link_to "flat sandals", "#" %></li>
-            <li><%= link_to "flat shoes", "#" %></li>
-            <li><%= link_to "flat flops", "#" %></li>
-            <li><%= link_to "heeled boots", "#" %></li>
-            <li><%= link_to "heeled sandals", "#" %></li>
-            <li><%= link_to "heeled shoes", "#" %></li>
-            <li><%= link_to "loafers", "#" %></li>
-            <li><%= link_to "pumps", "#" %></li>
-            <li><%= link_to "shoe accessories", "#" %></li>
-            <li><%= link_to "slippers", "#" %></li>
-            <li><%= link_to "trainers", "#" %></li>
-            <li><%= link_to "wedges", "#" %></li>
-          </ul>
-          <ul>
-            <li class="header">bags & accesories</li>
-            <li><%= link_to "across body bags", "#" %></li>
-            <li><%= link_to "bum bags", "#" %></li>
-            <li><%= link_to "backpacks", "#" %></li>
-            <li><%= link_to "clutches", "#" %></li>
-            <li><%= link_to "coin purses", "#" %></li>
-            <li><%= link_to "folder over purses", "#" %></li>
-            <li><%= link_to "gym bags", "#" %></li>
-            <li><%= link_to "holdalls", "#" %></li>
-            <li><%= link_to "makeup bags", "#" %></li>
-            <li><%= link_to "satchels", "#" %></li>
-            <li><%= link_to "shoppers", "#" %></li>
-            <li><%= link_to "shoulder bags", bags_shoulder_bags_products_path %></li>
-            <li><%= link_to "totes", "#" %></li>
-            <li><%= link_to "bag accessories", "#" %></li>
-            <li><%= link_to "zip purses", "#" %></li>
-            <li class="divider"></li>
-            <li><%= link_to "belts", "#" %></li>
-            <li><%= link_to "bow ties & collars", "#" %></li>
-            <li><%= link_to "bracelets", "#" %></li>
-            <li><%= link_to "capes & ponchos", "#" %></li>
-            <li><%= link_to "earrings", "#" %></li>
-            <li><%= link_to "glasses", "#" %></li>
-            <li><%= link_to "gloves", "#" %></li>
-            <li><%= link_to "hair accessories", "#" %></li>
-            <li><%= link_to "hats", "#" %></li>
-            <li><%= link_to "key rings", "#" %></li>
-            <li><%= link_to "necklaces", "#" %></li>
-            <li><%= link_to "rings", "#" %></li>
-            <li><%= link_to "scarves & snoods", "#" %></li>
-            <li><%= link_to "umbrellas", "#" %></li>
-          </ul>
         </div>
+
+        
         <!-- right_column -->
         <div class="medium-9 columns right_column">
           <div class="medium-12 columns bottom_row_clothes">

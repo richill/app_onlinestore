@@ -344,12 +344,11 @@
 //     workings
 // ---------------------------
 
-// .section_colour {
-//   background-color: red;
-// }
+.category_section {
+  border-bottom: 1px solid #000;
+}
 
-.cat_header {
-  border-top: 4px solid #262626;
+.category_section .cat_header {
   border-bottom: 1px solid rgba(40, 48, 45, 0.1) !important;
   padding: 8px 15px;
   text-transform: capitalize;
@@ -357,12 +356,17 @@
   margin-bottom: 8px;
 }
 
-.cat_header i {
-  font-size: 18px;
-  margin-right: 5px;
+.category_section .divider {
+  border-top: 4px solid #262626;
 }
 
-.cat_header .title {
+.category_section .cat_header i {
+  font-size: 18px;
+  margin-right: 5px;
+  color: rgba(40, 48, 45, 0.5) !important;
+}
+
+.category_section .cat_header .title {
   font-size: 18px;
 }
 
@@ -370,14 +374,12 @@
   margin-bottom: 5px;
 }
 
-.category_section_list {
-  // background-color: red;
-  height: 200px;
+.category_section .category_section_list {
+  height: 165px;
   overflow: scroll;
-  border-bottom: 1px solid #000;
 }
 
-.category_name {
+.category_section .category_name {
   font-size: 12px;
   letter-spacing: 1px;
 }
