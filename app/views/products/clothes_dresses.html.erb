@@ -14,25 +14,27 @@
 
         <!-- left_column -->
         <div class="medium-3 columns left_column">
-          <%= link_to "display all", clothes_dresses_products_path %>
-          <%= search_form_for @search_dress, url: clothes_dresses_products_path do |f| %>
-          <div class="filter_search_btn"><button><%= f.submit 'search' %></button></div>
-          <div>
-            <h3>colour <i class="fa fa-chevron-down click_search_btn_1"></i></h3>
-            <ul class="container_search_details_1">
-              <% CategoryColour.all.each do |colour| %>
-                <% if colour.products.clothes_dresses.count > 0 %>
-                  <li>
-                  <%= check_box_tag('q[category_colour_name_cont_any][]', colour.name) %>
-                  <%= colour.name %>
-                  </li>
-                <% else %>
-                  <% '' %>
+          <div class="serach_category">
+            <%= link_to "display all", clothes_dresses_products_path %>
+            <%= search_form_for @search_dress, url: clothes_dresses_products_path do |f| %>
+            <div class="filter_search_btn"><button><%= f.submit 'search' %></button></div>
+            <div>
+              <h3>colour <i class="fa fa-chevron-down click_search_btn_1"></i></h3>
+              <ul class="container_search_details_1">
+                <% CategoryColour.all.each do |colour| %>
+                  <% if colour.products.clothes_dresses.count > 0 %>
+                    <li>
+                    <%= check_box_tag('q[category_colour_name_cont_any][]', colour.name) %>
+                    <%= colour.name %>
+                    </li>
+                  <% else %>
+                    <% '' %>
+                  <% end %>
                 <% end %>
-              <% end %>
-            </ul>
+              </ul>
+            </div>
+            <% end %>
           </div>
-          <% end %>
 
           <ul>
             <li class="header">new in</li>
