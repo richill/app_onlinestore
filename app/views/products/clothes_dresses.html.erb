@@ -15,17 +15,21 @@
         <!-- left_column -->
         <div class="medium-3 columns left_column">
           <div class="serach_category">
-            <%= link_to "display all", clothes_dresses_products_path %>
+            <%# link_to "display all", clothes_dresses_products_path %>
             <%= search_form_for @search_dress, url: clothes_dresses_products_path do |f| %>
-            <div class="filter_search_btn"><button><%= f.submit 'search' %></button></div>
-            <div>
-              <h3>colour <i class="fa fa-chevron-down click_search_btn_1"></i></h3>
-              <ul class="container_search_details_1">
+            <div class="filter_search_btn"><button><%# f.submit 'search' %></button></div>
+            
+            <div class="category_section">
+              <div class="cat_header">
+                <span class="icon"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                <span class="title">colour</span>
+              </div>
+              <ul class="category_section_list">
                 <% CategoryColour.all.each do |colour| %>
                   <% if colour.products.clothes_dresses.count > 0 %>
                     <li>
                     <%= check_box_tag('q[category_colour_name_cont_any][]', colour.name) %>
-                    <%= colour.name %>
+                    <span class="category_name"><%= colour.name %></span>
                     </li>
                   <% else %>
                     <% '' %>
@@ -33,6 +37,8 @@
                 <% end %>
               </ul>
             </div>
+
+
             <% end %>
           </div>
 
