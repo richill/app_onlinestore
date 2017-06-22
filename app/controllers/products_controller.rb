@@ -54,7 +54,6 @@ class ProductsController < ApplicationController
   end
 
   def search
-    @products = Product.all
     @search = Product.search(params[:q])
     @products = @search.result(distinct: true)
   end

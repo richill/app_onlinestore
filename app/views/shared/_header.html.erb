@@ -29,6 +29,7 @@
           <li class="search">
             <%= search_form_for @search, url: search_products_path do |f| %>
              <%= f.text_field  :title_cont, placeholder: "What are you looking for?" %>
+             <%# f.text_field  :title_or_description_or_reference_or_category_colour_id_cont, placeholder: "What are you looking for?" %>
              <%= f.submit 'go' %>
             <% end %>
           </li>
