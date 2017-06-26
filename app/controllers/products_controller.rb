@@ -14,6 +14,8 @@ class ProductsController < ApplicationController
 
   def new
     @product = Product.new
+    @search = Product.search(params[:q])
+    @products = @search.result(distinct: true)
   end
 
   def edit

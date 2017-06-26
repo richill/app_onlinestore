@@ -58,6 +58,44 @@
               </ul>
             </div>
 
+            <div class="category_section">
+              <div class="cat_header">
+                <span class="icon"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                <span class="title">material</span>
+              </div>
+              <ul class="category_section_list">
+                <% CategoryColour.all.each do |colour| %>
+                  <% if colour.products.clothes_dresses.count > 0 %>
+                    <li>
+                    <%= check_box_tag('q[category_colour_name_cont_any][]', colour.name) %>
+                    <span class="category_name"><%= colour.name %></span>
+                    </li>
+                  <% else %>
+                    <% '' %>
+                  <% end %>
+                <% end %>
+              </ul>
+            </div>
+
+            <div class="category_section">
+              <div class="cat_header">
+                <span class="icon"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                <span class="title">category</span>
+              </div>
+              <ul class="category_section_list">
+                <% CategoryColour.all.each do |colour| %>
+                  <% if colour.products.clothes_dresses.count > 0 %>
+                    <li>
+                    <%= check_box_tag('q[category_colour_name_cont_any][]', colour.name) %>
+                    <span class="category_name"><%= colour.name %></span>
+                    </li>
+                  <% else %>
+                    <% '' %>
+                  <% end %>
+                <% end %>
+              </ul>
+            </div>
+
 
             <% end %>
           </div>
