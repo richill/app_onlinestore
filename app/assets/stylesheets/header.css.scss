@@ -73,8 +73,25 @@
   padding: 8px 0px;
 }
 
+.header_main_container .serach_info {
+  font-style: italic;
+  text-transform: lowercase;
+  font-size: 10px;
+  margin-top: 2px;
+  letter-spacing: 1px;
+}
+
+.header_main_container .serach_info a {
+  color: #E34B51 !important;
+}
+
+.header_main_container .serach_info a:hover {
+  text-decoration: underline;
+}
+
 .header_main_container .header_container .search_section {
   background-color: #fff;
+  margin-bottom: 18px;
 }
 
 .header_main_container .header_container .search_section ul {
