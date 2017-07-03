@@ -28,7 +28,7 @@
           </li>
           <li class="search">
             <%= search_form_for @search, url: search_products_path do |f| %>
-             <%= f.text_field  :title_or_description_or_reference_cont, placeholder: "What are you looking for? name of dress" %>
+             <%= f.text_field  :title_or_description_or_reference_cont, placeholder: "What are you looking for? name of item" %>
              <%= f.submit 'go' %>
              <div class="serach_info">
               <span><i class="fa fa-info-circle" aria-hidden="true"></i> search by product name, reference or description eg:</span>
