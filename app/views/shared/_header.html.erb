@@ -31,7 +31,7 @@
              <%= f.text_field  :title_or_description_or_reference_cont, placeholder: "What are you looking for? name of dress" %>
              <%= f.submit 'go' %>
              <div class="serach_info">
-              <span>search by product name, reference or description eg:</span>
+              <span><i class="fa fa-info-circle" aria-hidden="true"></i> search by product name, reference or description eg:</span>
               <span>
                 <%= link_to "#{Product.first.title}", product_path(Product.first) %>
               </span>
